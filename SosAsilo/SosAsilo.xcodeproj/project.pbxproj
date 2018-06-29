@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C4E6AB20E667BE00909487 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03C4E6A920E667BE00909487 /* Model.xcdatamodeld */; };
 		45DE512220E3D6E200B7C5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DE512120E3D6E200B7C5A6 /* AppDelegate.swift */; };
 		45DE512920E3D6E200B7C5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45DE512820E3D6E200B7C5A6 /* Assets.xcassets */; };
 		45DE512C20E3D6E200B7C5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DE512A20E3D6E200B7C5A6 /* LaunchScreen.storyboard */; };
@@ -18,8 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		14533D918BD866C0970349A1 /* Pods-SosAsilo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SosAsilo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SosAsilo/Pods-SosAsilo.debug.xcconfig"; sourceTree = "<group>"; };
 		39D9A5B1140A0BF00D327678 /* Pods-SosAsilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SosAsilo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SosAsilo/Pods-SosAsilo.release.xcconfig"; sourceTree = "<group>"; };
+=======
+		03C4E6AA20E667BE00909487 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+>>>>>>> 338b2037c872b245837ba8a943ce8d37d9470e52
 		45DE511E20E3D6E200B7C5A6 /* SosAsilo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SosAsilo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45DE512120E3D6E200B7C5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45DE512820E3D6E200B7C5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		45DE511520E3D6E200B7C5A6 = {
 			isa = PBXGroup;
 			children = (
+				03C4E6A920E667BE00909487 /* Model.xcdatamodeld */,
 				45DE512020E3D6E200B7C5A6 /* SosAsilo */,
 				45DE511F20E3D6E200B7C5A6 /* Products */,
 				1091834DF4B4DCE1D1ABC922 /* Pods */,
@@ -212,6 +218,7 @@
 				A2D4AE8520E670E100752598 /* SecondViewController.swift in Sources */,
 				A2D4AE8320E670D200752598 /* ViewController.swift in Sources */,
 				45DE512220E3D6E200B7C5A6 /* AppDelegate.swift in Sources */,
+				03C4E6AB20E667BE00909487 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03C4E6A920E667BE00909487 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03C4E6AA20E667BE00909487 /* Model.xcdatamodel */,
+			);
+			currentVersion = 03C4E6AA20E667BE00909487 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 45DE511620E3D6E200B7C5A6 /* Project object */;
 }
