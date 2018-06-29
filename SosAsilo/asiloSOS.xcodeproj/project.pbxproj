@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45A400FF20E6982900122F89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A400FE20E6982900122F89 /* Login.storyboard */; };
+		45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010020E69BA400122F89 /* LoginViewController.swift */; };
+		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
 		A289549920E5031C000F39AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549820E5031C000F39AE /* AppDelegate.swift */; };
 		A289549B20E5031C000F39AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549A20E5031C000F39AE /* ViewController.swift */; };
 		A289549E20E5031C000F39AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289549C20E5031C000F39AE /* Main.storyboard */; };
@@ -28,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		12AC12A8183F1950321B58DC /* Pods_asiloSOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asiloSOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A400FE20E6982900122F89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		45A4010020E69BA400122F89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		45A4010220E6AD0100122F89 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		A289549520E5031C000F39AE /* asiloSOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asiloSOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A289549820E5031C000F39AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A289549A20E5031C000F39AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,11 +107,14 @@
 			isa = PBXGroup;
 			children = (
 				A289549C20E5031C000F39AE /* Main.storyboard */,
+				45A400FE20E6982900122F89 /* Login.storyboard */,
 				A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */,
 				A28954B120E50ECC000F39AE /* Model */,
 				A289549820E5031C000F39AE /* AppDelegate.swift */,
 				A289549A20E5031C000F39AE /* ViewController.swift */,
 				A28954B820E51E5A000F39AE /* SecondViewController.swift */,
+				45A4010020E69BA400122F89 /* LoginViewController.swift */,
+				45A4010220E6AD0100122F89 /* CadastroViewController.swift */,
 				A28954BA20E51F40000F39AE /* AsiloCell.swift */,
 				A28954AD20E50436000F39AE /* listaGeralCell.swift */,
 				A28954AF20E50711000F39AE /* view.swift */,
@@ -192,6 +201,7 @@
 				A28954A620E5031D000F39AE /* LaunchScreen.storyboard in Resources */,
 				A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */,
 				A28954A320E5031D000F39AE /* Assets.xcassets in Resources */,
+				45A400FF20E6982900122F89 /* Login.storyboard in Resources */,
 				A289549E20E5031C000F39AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,12 +259,14 @@
 				A28954B520E51256000F39AE /* voluntario.swift in Sources */,
 				A28954B920E51E5A000F39AE /* SecondViewController.swift in Sources */,
 				A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */,
+				45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */,
 				A289549B20E5031C000F39AE /* ViewController.swift in Sources */,
 				A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */,
 				A289549920E5031C000F39AE /* AppDelegate.swift in Sources */,
 				A28954AE20E50436000F39AE /* listaGeralCell.swift in Sources */,
 				A28954B020E50711000F39AE /* view.swift in Sources */,
 				A28954A120E5031C000F39AE /* asiloSOS.xcdatamodeld in Sources */,
+				45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */,
 				A28954BB20E51F40000F39AE /* AsiloCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

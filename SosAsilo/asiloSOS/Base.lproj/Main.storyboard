@@ -158,6 +158,14 @@
             </objects>
             <point key="canvasLocation" x="2817" y="134"/>
         </scene>
+        <!--Login-->
+        <scene sceneID="LnQ-BX-gC8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="imz-4m-YaE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xbf-JN-c78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="814" y="-275"/>
+        </scene>
         <!--Item-->
         <scene sceneID="HJp-Mr-ohw">
             <objects>
@@ -196,6 +204,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="hHK-uU-nT6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i8h-da-e4x">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
