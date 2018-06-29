@@ -1,25 +1,28 @@
 //
 //  ViewController.swift
-//  SosAsilo
+//  asiloSOS
 //
-//  Created by Fabrício Wolff on 27/06/18.
-//  Copyright © 2018 Fabrício Wolff. All rights reserved.
+//  Created by Victor Orestes Impérico on 28/06/2018.
+//  Copyright © 2018 Victor Orestes Impérico. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var listaGeralTable: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // asiloTable.dataSource = self
+        // asiloTable.delegate = self
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
+//extension ViewController: UITableViewDataSource, UITableViewDelegate {
+//}
