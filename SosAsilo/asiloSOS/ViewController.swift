@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var TopBar: UINavigationItem!
     @IBOutlet weak var listaGeralTable: UITableView!
     
-    let model = AsiloModel.asilos()
+    let model = AsiloModel.asilos() 
     
     override func viewDidLoad() {
         super.viewDidLoad()
