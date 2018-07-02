@@ -1,4 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Alimentos" representedClassName="Alimentos" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voluntarios" inverseName="newRelationship" inverseEntity="Voluntarios" syncable="YES"/>
+        <relationship name="statusAlimentosInstituicao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Instituicao" inverseName="alimentos" inverseEntity="Instituicao" syncable="YES"/>
+    </entity>
+    <entity name="HigienePessoal" representedClassName="HigienePessoal" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voluntarios" inverseName="newRelationship1" inverseEntity="Voluntarios" syncable="YES"/>
+        <relationship name="statusHigienePessoalInstituicao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Instituicao" inverseName="higienePessoal" inverseEntity="Instituicao" syncable="YES"/>
+    </entity>
+    <entity name="Instituicao" representedClassName="Instituicao" syncable="YES" codeGenerationType="class">
+        <attribute name="cnpjInst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailInst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="enderecoInst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fotoInst" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nomeInst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senhaInst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefoneInst" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="alimentos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Alimentos" inverseName="statusAlimentosInstituicao" inverseEntity="Alimentos" syncable="YES"/>
+        <relationship name="higienePessoal" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HigienePessoal" inverseName="statusHigienePessoalInstituicao" inverseEntity="HigienePessoal" syncable="YES"/>
+        <relationship name="produtosLimpeza" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProdutosLimpeza" inverseName="statusProdLimpezaInstituicao" inverseEntity="ProdutosLimpeza" syncable="YES"/>
+        <relationship name="remedios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Remedios" inverseName="statusRemediosInstituicao" inverseEntity="Remedios" syncable="YES"/>
+    </entity>
+    <entity name="ProdutosLimpeza" representedClassName="ProdutosLimpeza" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voluntarios" inverseName="newRelationship2" inverseEntity="Voluntarios" syncable="YES"/>
+        <relationship name="statusProdLimpezaInstituicao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Instituicao" inverseName="produtosLimpeza" inverseEntity="Instituicao" syncable="YES"/>
+    </entity>
+    <entity name="Remedios" representedClassName="Remedios" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voluntarios" inverseName="newRelationship3" inverseEntity="Voluntarios" syncable="YES"/>
+        <relationship name="statusRemediosInstituicao" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Instituicao" inverseName="remedios" inverseEntity="Instituicao" syncable="YES"/>
+    </entity>
+    <entity name="Voluntarios" representedClassName="Voluntarios" syncable="YES" codeGenerationType="class">
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Alimentos" inverseName="newRelationship1" inverseEntity="Alimentos" syncable="YES"/>
+        <relationship name="newRelationship1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HigienePessoal" inverseName="newRelationship1" inverseEntity="HigienePessoal" syncable="YES"/>
+        <relationship name="newRelationship2" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProdutosLimpeza" inverseName="newRelationship1" inverseEntity="ProdutosLimpeza" syncable="YES"/>
+        <relationship name="newRelationship3" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Remedios" inverseName="newRelationship" inverseEntity="Remedios" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Instituicao" positionX="-630" positionY="-171" width="324" height="208"/>
+        <element name="Voluntarios" positionX="295" positionY="27" width="254" height="103"/>
+        <element name="Alimentos" positionX="-18" positionY="-334" width="189" height="73"/>
+        <element name="HigienePessoal" positionX="-81" positionY="-64" width="189" height="73"/>
+        <element name="ProdutosLimpeza" positionX="-36" positionY="53" width="189" height="73"/>
+        <element name="Remedios" positionX="-54" positionY="284" width="128" height="73"/>
+    </elements>
 </model>

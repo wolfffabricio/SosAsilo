@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import  CoreData
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet weak var tableView: UITableView!
@@ -20,7 +21,40 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.rowHeight = 80.0
+        
+        AppDelegate.saveContext()
     }
+    
+    //Criando Instituições
+    
+    
+    
+    
+    
+    
+    
+    //função nova Instituição
+    
+    func newInstituicao (nomeInst: String, enderecoInst: String, telefoneInst: String, emailInst: String, cnpjInst: String, senhaInst: String, fotoInst: UIImage ) -> Instituicao {
+        
+        let instituicao = Instituicao (context: AppDelegate.persistentContainer.viewContext)
+        instituicao.nomeInst = nomeInst
+        instituicao.enderecoInst = enderecoInst
+        instituicao.telefoneInst = telefoneInst
+        instituicao.emailInst = emailInst
+        instituicao.cnpjInst = cnpjInst
+        instituicao.senhaInst = senhaInst
+        instituicao.fotoInst = UIImagePNGRepresentation(fotoInst)
+        
+        
+        return instituicao
+        
+    }
+    
+    
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -45,7 +79,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
             
         }
-        
+    
+    
         
         
 
