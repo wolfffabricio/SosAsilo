@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CadastroViewController: UIViewController {
+class CadastroViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
@@ -19,6 +19,14 @@ class CadastroViewController: UIViewController {
     @IBOutlet weak var btCadastrar: UIButton!
     
     override func viewDidLoad() {
+        
+        self.nomeTextField.delegate = self
+        self.enderecoTextField.delegate = self
+        self.telefoneTextField.delegate = self
+        self.cnpjTextField.delegate = self
+        self.emailTextField.delegate = self
+        self.senhaTextField.delegate = self
+        
         self.navigationItem.title = "Cadastro"
     
         nomeTextField.layer.borderColor = UIColor.white.cgColor
@@ -40,6 +48,16 @@ class CadastroViewController: UIViewController {
         btCadastrar.layer.borderColor = UIColor.white.cgColor
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func btCadastrar(_ sender: UIButton) {
         
     }
