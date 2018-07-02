@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Alimentos" representedClassName="Alimentos" syncable="YES" codeGenerationType="class">
         <relationship name="newRelationship1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Voluntarios" inverseName="newRelationship" inverseEntity="Voluntarios" syncable="YES"/>
@@ -43,4 +44,8 @@
         <element name="ProdutosLimpeza" positionX="-36" positionY="53" width="189" height="73"/>
         <element name="Remedios" positionX="-54" positionY="284" width="128" height="73"/>
     </elements>
+=======
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14133" systemVersion="17E199" minimumToolsVersion="Xcode 8.0" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <elements/>
+>>>>>>> dev
 </model>

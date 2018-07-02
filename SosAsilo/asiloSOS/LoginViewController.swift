@@ -25,7 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        self.navigationController?.navigationBar.isTranslucent = true
 //        self.navigationController?.view.backgroundColor = .clear
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Login"
         
@@ -41,9 +41,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         btEntrar.layer.borderColor = UIColor.white.cgColor
         
         
-        emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.white])
-        senhaTextField.attributedPlaceholder = NSAttributedString(string:"Senha", attributes: [kCTForegroundColorAttributeName as NSAttributedStringKey: UIColor.white])
+        emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
+        senhaTextField.attributedPlaceholder = NSAttributedString(string:"Senha", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func btEntrar(_ sender: UIButton) {

@@ -7,17 +7,34 @@
 //
 
 import UIKit
+<<<<<<< HEAD
 import  CoreData
+=======
+import UserNotifications
+>>>>>>> dev
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var TopBar: UINavigationItem!
     @IBOutlet weak var listaGeralTable: UITableView!
     
-    let model = AsiloModel.asilos()
+    let model = AsiloModel.asilos() 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
+        
+        let content = UNMutableNotificationContent()
+        content.title = "ATENÇÃO"
+        content.body = "O asilo Padre Cacique precisa de ajuda"
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.rowHeight = 80.0
