@@ -12,7 +12,6 @@
 		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
 		A289549920E5031C000F39AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549820E5031C000F39AE /* AppDelegate.swift */; };
 		A289549B20E5031C000F39AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549A20E5031C000F39AE /* ViewController.swift */; };
-		A289549E20E5031C000F39AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289549C20E5031C000F39AE /* Main.storyboard */; };
 		A28954A120E5031C000F39AE /* asiloSOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A289549F20E5031C000F39AE /* asiloSOS.xcdatamodeld */; };
 		A28954A320E5031D000F39AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28954A220E5031D000F39AE /* Assets.xcassets */; };
 		A28954A620E5031D000F39AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28954A420E5031D000F39AE /* LaunchScreen.storyboard */; };
@@ -26,6 +25,7 @@
 		A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */; };
 		A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */; };
 		A7C2F69D20E6718600D9F216 /* AsiloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69C20E6718600D9F216 /* AsiloModel.swift */; };
+		A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289549C20E5031C000F39AE /* Main.storyboard */; };
 		BA798C3E410941BFF0DB0D3A /* Pods_asiloSOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AC12A8183F1950321B58DC /* Pods_asiloSOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -200,10 +200,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A28954A620E5031D000F39AE /* LaunchScreen.storyboard in Resources */,
+				A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */,
 				A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */,
 				A28954A320E5031D000F39AE /* Assets.xcassets in Resources */,
 				45A400FF20E6982900122F89 /* Login.storyboard in Resources */,
-				A289549E20E5031C000F39AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorimperico.asiloSOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -432,7 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorimperico.asiloSOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
