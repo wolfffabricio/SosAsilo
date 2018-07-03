@@ -10,14 +10,14 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    @IBOutlet weak var tableViewGeral: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var topBar: UINavigationItem!
     let model = AsiloModel.asilos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableViewGeral.rowHeight = 210
+        self.tableView.rowHeight = 210
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
         
         let content = UNMutableNotificationContent()
@@ -30,11 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
-        tableViewGeral.dataSource = self
-        tableViewGeral.delegate = self
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,6 +54,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             return cell
             
         }
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let asilo = model.data[indexPath.row]
+            performSegue(withIdentifier: "mostraDetalhes", sender: asilo)
+        }
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if let vc = segue.destination as? SecondViewController, segue.identifier == "mostraDetalhes"{
+                guard let asilo = sender as? Asilo else {return}
+                vc.asilo = asilo
+            }
+        }
+
         
         
         
