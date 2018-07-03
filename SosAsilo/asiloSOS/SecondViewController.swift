@@ -9,8 +9,8 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
     @IBOutlet weak var AsiloTableView: UITableView!
+    var asilo: Asilo!
     
     override func viewDidLoad() {
         super.viewDidLoad()
