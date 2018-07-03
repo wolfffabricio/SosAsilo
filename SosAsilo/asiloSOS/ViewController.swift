@@ -10,15 +10,14 @@ import UIKit
 import UserNotifications
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var TopBar: UINavigationItem!
-    @IBOutlet weak var listaGeralTable: UITableView!
+    @IBOutlet weak var tableViewGeral: UITableView!
     
-    let model = AsiloModel.asilos() 
+    @IBOutlet weak var topBar: UINavigationItem!
+    let model = AsiloModel.asilos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableViewGeral.rowHeight = 210
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
         
         let content = UNMutableNotificationContent()
@@ -31,9 +30,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
-        tableView.dataSource = self
-        tableView.delegate = self
-        self.tableView.rowHeight = 80.0
+        tableViewGeral.dataSource = self
+        tableViewGeral.delegate = self
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             let asilo = model.data[indexPath.row]
             
-            cell.layer.cornerRadius = 8
+            cell.view.layer.cornerRadius = 4
             
             cell.labelNome.text = asilo.nomeInstituicao
             cell.labelEndereco.text = asilo.endereco

@@ -10,10 +10,10 @@ import UIKit
 
 class listaGeralCell: UITableViewCell {
     @IBOutlet weak var photoAsilo: UIImageView!
-    @IBOutlet weak var labelNome: UILabel!
-    @IBOutlet weak var labelEndereco: UILabel!
-    @IBOutlet weak var buttonVerAsilo: UIButton!
     
+    @IBOutlet weak var view: UIView!
+    @IBOutlet weak var labelEndereco: UILabel!
+    @IBOutlet weak var labelNome: UILabel!
     override func layoutSubviews() {
         super.layoutSubviews()
     }
