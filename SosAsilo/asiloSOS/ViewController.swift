@@ -49,10 +49,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func sendNotification() {
         
-        self.tableView.rowHeight = 210
-        
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {didAllow, error in})
-        
         let content = UNMutableNotificationContent()
         content.title = "ATENÇÃO"
         content.body = "O asilo Padre Cacique precisa de ajuda"
@@ -61,10 +57,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        
-        
-        tableView.dataSource = self
-        tableView.delegate = self
         
         let content2 = UNMutableNotificationContent()
         content2.title = "O FRIO CHEGOU!!"

@@ -9,8 +9,8 @@
 import UIKit
 
 class listaGeralCell: UITableViewCell {
-    @IBOutlet weak var photoAsilo: UIImageView!
     
+    @IBOutlet weak var photoAsilo: UIImageView!
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var labelEndereco: UILabel!
     @IBOutlet weak var labelNome: UILabel!
