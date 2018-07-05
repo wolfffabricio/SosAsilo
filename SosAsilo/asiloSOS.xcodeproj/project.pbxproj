@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450A658820ED07FF00AC6AF8 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450A658720ED07FF00AC6AF8 /* Notification.storyboard */; };
+		450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658920ED083100AC6AF8 /* NotificationViewController.swift */; };
+		450A658C20ED0F7300AC6AF8 /* ListaNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */; };
+		450A659020ED160400AC6AF8 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658F20ED160400AC6AF8 /* NotificationModel.swift */; };
+		450A659420ED23B500AC6AF8 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A659320ED23B500AC6AF8 /* Notifications.swift */; };
 		45A400FF20E6982900122F89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A400FE20E6982900122F89 /* Login.storyboard */; };
 		45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010020E69BA400122F89 /* LoginViewController.swift */; };
 		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
@@ -30,6 +35,11 @@
 
 /* Begin PBXFileReference section */
 		12AC12A8183F1950321B58DC /* Pods_asiloSOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_asiloSOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450A658720ED07FF00AC6AF8 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		450A658920ED083100AC6AF8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaNotificationCell.swift; sourceTree = "<group>"; };
+		450A658F20ED160400AC6AF8 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		450A659320ED23B500AC6AF8 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = /Users/fabricio.wolff/Desktop/App/SosAsilo/SosAsilo/asiloSOS/Model/Notifications.swift; sourceTree = "<absolute>"; };
 		45A400FE20E6982900122F89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45A4010020E69BA400122F89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45A4010220E6AD0100122F89 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -106,15 +116,18 @@
 			children = (
 				A289549C20E5031C000F39AE /* Main.storyboard */,
 				45A400FE20E6982900122F89 /* Login.storyboard */,
+				450A658720ED07FF00AC6AF8 /* Notification.storyboard */,
 				A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */,
 				A28954B120E50ECC000F39AE /* Model */,
 				A289549820E5031C000F39AE /* AppDelegate.swift */,
 				A289549A20E5031C000F39AE /* ViewController.swift */,
+				450A658920ED083100AC6AF8 /* NotificationViewController.swift */,
 				A28954B820E51E5A000F39AE /* SecondViewController.swift */,
 				45A4010020E69BA400122F89 /* LoginViewController.swift */,
 				45A4010220E6AD0100122F89 /* CadastroViewController.swift */,
 				A28954BA20E51F40000F39AE /* AsiloCell.swift */,
 				A28954AD20E50436000F39AE /* listaGeralCell.swift */,
+				450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */,
 				A28954AF20E50711000F39AE /* view.swift */,
 				A28954A220E5031D000F39AE /* Assets.xcassets */,
 				A28954A420E5031D000F39AE /* LaunchScreen.storyboard */,
@@ -129,6 +142,8 @@
 			children = (
 				A28954B220E50EF4000F39AE /* Asilo.swift */,
 				A7C2F69C20E6718600D9F216 /* AsiloModel.swift */,
+				450A659320ED23B500AC6AF8 /* Notifications.swift */,
+				450A658F20ED160400AC6AF8 /* NotificationModel.swift */,
 				A28954B420E51256000F39AE /* voluntario.swift */,
 				A28954BE20E526A3000F39AE /* voluntarioModel.swift */,
 			);
@@ -201,6 +216,7 @@
 				A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */,
 				A28954A320E5031D000F39AE /* Assets.xcassets in Resources */,
 				45A400FF20E6982900122F89 /* Login.storyboard in Resources */,
+				450A658820ED07FF00AC6AF8 /* Notification.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +270,7 @@
 			files = (
 				A7C2F69D20E6718600D9F216 /* AsiloModel.swift in Sources */,
 				A28954B320E50EF4000F39AE /* Asilo.swift in Sources */,
+				450A658C20ED0F7300AC6AF8 /* ListaNotificationCell.swift in Sources */,
 				A28954B520E51256000F39AE /* voluntario.swift in Sources */,
 				A28954B920E51E5A000F39AE /* SecondViewController.swift in Sources */,
 				A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */,
@@ -262,8 +279,11 @@
 				A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */,
 				A289549920E5031C000F39AE /* AppDelegate.swift in Sources */,
 				A28954AE20E50436000F39AE /* listaGeralCell.swift in Sources */,
+				450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */,
 				A28954B020E50711000F39AE /* view.swift in Sources */,
+				450A659420ED23B500AC6AF8 /* Notifications.swift in Sources */,
 				45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */,
+				450A659020ED160400AC6AF8 /* NotificationModel.swift in Sources */,
 				A28954BB20E51F40000F39AE /* AsiloCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
