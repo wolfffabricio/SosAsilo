@@ -84,16 +84,16 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    func newInstituicoes (nome: String, email: String, senha: String) -> Instituicao {
-        
-        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
-        instituicao.nome = nome
-        instituicao.email = email
-        instituicao.senha = senha
-        
-        return instituicao
-        
-    }
+//    func newInstituicoes (nome: String, email: String, senha: String) -> Instituicao {
+//        
+//        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
+//        instituicao.nome = nome
+//        instituicao.email = email
+//        instituicao.senha = senha
+//        
+//        return instituicao
+//        
+//    }
     
     
     @IBAction func btCadastrar(_ sender: UIButton) {

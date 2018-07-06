@@ -588,13 +588,10 @@
         </scene>
     </scenes>
     <resources>
-<<<<<<< HEAD
         <image name="bg" width="1170" height="620"/>
         <image name="icone1024x1024" width="1024" height="1024"/>
-=======
         <image name="checkBoxUnmarked" width="16" height="16"/>
         <image name="profile" width="29" height="29"/>
         <image name="second" width="16" height="16"/>
->>>>>>> fbd9e4f503a0ae3140cf5b93e53d63c7040eddc2
     </resources>
 </document>
