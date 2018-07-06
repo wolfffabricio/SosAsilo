@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
 class CadastroViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var photoInst: UIImageView!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
@@ -17,6 +19,20 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var btCadastrar: UIButton!
+    
+    var asilo = AsiloModel()
+    
+    var photo = "bg.jpeg"
+    var nome = ""
+    var endereco = ""
+    var telefone = ""
+    var cnpj = ""
+    var email = ""
+    var senha = ""
+
+    
+    
+    
     
     override func viewDidLoad() {
         
@@ -47,6 +63,16 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         btCadastrar.layer.borderWidth = 1
         btCadastrar.layer.borderColor = UIColor.white.cgColor
         
+        //implementando db - Rodrigo Andreaza
+        
+        
+        
+        
+        AppDelegate.saveContext()
+        
+        
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -58,7 +84,38 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+//    func newInstituicoes (nome: String, email: String, senha: String) -> Instituicao {
+//        
+//        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
+//        instituicao.nome = nome
+//        instituicao.email = email
+//        instituicao.senha = senha
+//        
+//        return instituicao
+//        
+//    }
+    
+    
     @IBAction func btCadastrar(_ sender: UIButton) {
+      //add db
+        
+        nome = nomeTextField.text!
+        endereco = enderecoTextField.text!
+        telefone = telefoneTextField.text!
+        cnpj = cnpjTextField.text!
+        email = emailTextField.text!
+        senha = senhaTextField.text!
+
+        asilo.data.append(Asilo(nomeInstituicao: nome, endereco: endereco, photo: photo, telefone: telefone, email: email, cnpj: cnpj, senha: senha))
+    
+    
+        
+        
+        //let instituicaoBD = newInstituicoes()
+      
+        
+      
+        
         
     }
 }

@@ -13,6 +13,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var btEntrar: UIButton!
+    @IBOutlet weak var iconLogin: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         btEntrar.layer.borderWidth = 1
         btEntrar.layer.borderColor = UIColor.white.cgColor
         
+        iconLogin.layer.masksToBounds = true
+        iconLogin.layer.cornerRadius = iconLogin.frame.width / 2
         
         //emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
         //senhaTextField.attributedPlaceholder = NSAttributedString(string:"Senha", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
