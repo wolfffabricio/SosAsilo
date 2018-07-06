@@ -11,7 +11,6 @@
 		450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658920ED083100AC6AF8 /* NotificationViewController.swift */; };
 		450A658C20ED0F7300AC6AF8 /* ListaNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */; };
 		450A659020ED160400AC6AF8 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658F20ED160400AC6AF8 /* NotificationModel.swift */; };
-		450A659420ED23B500AC6AF8 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A659320ED23B500AC6AF8 /* Notifications.swift */; };
 		45A400FF20E6982900122F89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A400FE20E6982900122F89 /* Login.storyboard */; };
 		45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010020E69BA400122F89 /* LoginViewController.swift */; };
 		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
@@ -27,6 +26,7 @@
 		A28954BB20E51F40000F39AE /* AsiloCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954BA20E51F40000F39AE /* AsiloCell.swift */; };
 		A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954BE20E526A3000F39AE /* voluntarioModel.swift */; };
 		A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */; };
+		A753B0BC20EF981A004C2A94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753B0BB20EF981A004C2A94 /* Notifications.swift */; };
 		A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */; };
 		A7C2F69D20E6718600D9F216 /* AsiloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69C20E6718600D9F216 /* AsiloModel.swift */; };
 		A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289549C20E5031C000F39AE /* Main.storyboard */; };
@@ -39,7 +39,6 @@
 		450A658920ED083100AC6AF8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaNotificationCell.swift; sourceTree = "<group>"; };
 		450A658F20ED160400AC6AF8 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
-		450A659320ED23B500AC6AF8 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = /Users/fabricio.wolff/Desktop/App/SosAsilo/SosAsilo/asiloSOS/Model/Notifications.swift; sourceTree = "<absolute>"; };
 		45A400FE20E6982900122F89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45A4010020E69BA400122F89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45A4010220E6AD0100122F89 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +57,7 @@
 		A28954BA20E51F40000F39AE /* AsiloCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiloCell.swift; sourceTree = "<group>"; };
 		A28954BE20E526A3000F39AE /* voluntarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voluntarioModel.swift; sourceTree = "<group>"; };
 		A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A753B0BB20EF981A004C2A94 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerCustom.swift; sourceTree = "<group>"; };
 		A7C2F69C20E6718600D9F216 /* AsiloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiloModel.swift; sourceTree = "<group>"; };
 		D941BB5D6325D7ADB6C65F3A /* Pods-asiloSOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asiloSOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-asiloSOS/Pods-asiloSOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,10 +142,10 @@
 			children = (
 				A28954B220E50EF4000F39AE /* Asilo.swift */,
 				A7C2F69C20E6718600D9F216 /* AsiloModel.swift */,
-				450A659320ED23B500AC6AF8 /* Notifications.swift */,
 				450A658F20ED160400AC6AF8 /* NotificationModel.swift */,
 				A28954B420E51256000F39AE /* voluntario.swift */,
 				A28954BE20E526A3000F39AE /* voluntarioModel.swift */,
+				A753B0BB20EF981A004C2A94 /* Notifications.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				A28954AE20E50436000F39AE /* listaGeralCell.swift in Sources */,
 				450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */,
 				A28954B020E50711000F39AE /* view.swift in Sources */,
-				450A659420ED23B500AC6AF8 /* Notifications.swift in Sources */,
+				A753B0BC20EF981A004C2A94 /* Notifications.swift in Sources */,
 				45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */,
 				450A659020ED160400AC6AF8 /* NotificationModel.swift in Sources */,
 				A28954BB20E51F40000F39AE /* AsiloCell.swift in Sources */,
