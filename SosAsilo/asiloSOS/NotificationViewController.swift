@@ -17,7 +17,7 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.tableView.rowHeight = 80
+        self.tableView.rowHeight = 100
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -35,6 +35,9 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
         let notification = model.data[indexPath.row]
         
         cell.view.layer.cornerRadius = 4
+        
+        cell.photoNotification.layer.masksToBounds = true
+        cell.photoNotification.layer.cornerRadius = cell.photoNotification.frame.width / 2
         
         cell.titleNotification.text = notification.title
         cell.textNotification.text = notification.text

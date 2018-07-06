@@ -14,14 +14,8 @@ class ListaNotificationCell: UITableViewCell {
     @IBOutlet weak var titleNotification: UILabel!
     @IBOutlet weak var textNotification: UILabel!
     @IBOutlet weak var view: UIView!
+    
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.frame = UIEdgeInsetsInsetRect(contentView.frame, UIEdgeInsetsMake(0, 16, 0, 16))
     }
-    
-
-//    func roundedPhoto() {
-//        photoNotification.layer.masksToBounds = true
-//        photoNotification.layer.cornerRadius = photoNotification.frame.width / 2
-//    }
 }
