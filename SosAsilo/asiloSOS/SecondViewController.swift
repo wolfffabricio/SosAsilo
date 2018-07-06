@@ -11,9 +11,11 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBOutlet weak var AsiloTableView: UITableView!
     var asilo: Asilo!
+    @IBOutlet weak var photoAsilo: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoAsilo.image = UIImage(named: "\(asilo.photo)")
 
         // Do any additional setup after loading the view.
     }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K4S-Bd-LxF">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,28 +11,52 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="FzV-5X-nLj">
+        <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="K4S-Bd-LxF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KEm-6p-YAv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOS Asilo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ho-5a-1Ub">
-                                <rect key="frame" x="103" y="312" width="168" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardiogram" translatesAutoresizingMaskIntoConstraints="NO" id="JXZ-cA-GK0">
+                                <rect key="frame" x="146" y="307" width="123" height="123"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="N4f-Y5-FPa"/>
+                                    <constraint firstAttribute="width" constant="123" id="qEo-sZ-olG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22DA0B31-649C-4595-B393-27CDB71AE580" translatesAutoresizingMaskIntoConstraints="NO" id="sDv-bj-8Of">
+                                <rect key="frame" x="140" y="382" width="140" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="erI-QR-naZ"/>
+                                    <constraint firstAttribute="width" constant="140" id="yE1-d6-Y9R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S.O.S Asilo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET7-cm-8lS">
+                                <rect key="frame" x="166" y="476" width="83" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="eYg-k6-0ks"/>
+                        <color key="backgroundColor" red="0.10588235294117647" green="0.60392156862745094" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sDv-bj-8Of" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="CtT-fm-Pzk"/>
+                            <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FNf-PD-uSi"/>
+                            <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="e4y-3j-RKX"/>
+                            <constraint firstItem="sDv-bj-8Of" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="362" id="wHI-qV-jWp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xxc-ix-ptP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-34" y="198"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="22DA0B31-649C-4595-B393-27CDB71AE580" width="567" height="592"/>
+        <image name="cardiogram" width="512" height="512"/>
+    </resources>
 </document>

@@ -9,16 +9,38 @@
 import UIKit
 import CoreData
 import Firebase
+import RevealingSplashView
+import LBTAComponents
+
+//let heartAttackNotificationName = Notification.Name("heartAttack")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    let revealingSplashView = RevealingSplashView(iconImage: #imageLiteral(resourceName: "cardiogram"), iconInitialSize: CGSize(width: 123, height: 123), backgroundColor: UIColor(r: 27, g: 154, b: 247))
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //        window = UIWindow()
+        //        window?.makeKeyAndVisible()
+        //        let vc = SplashViewController()
+        //        window?.rootViewController = vc
+        //
+        //        revealingSplashView.animationType = .heartBeat
+        //        self.window?.addSubview(revealingSplashView)
+        //        revealingSplashView.startAnimation()
+        //        revealingSplashView.finishHeartBeatAnimation()
+        
+        //NotificationCenter.default.addObserver(self, selector: #selector(handleHeartAttack), name: heartAttackNotificationName, object: nil)
+        
         return true
+    }
+    
+    @objc func handleHeartAttack() {
+        revealingSplashView.heartAttack = true
+        
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
@@ -46,10 +68,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     // MARK: - Core Data stack
-
+    
     //static var persistentContainer: NSPersistentContainer = {
     
-     static var persistentContainer: NSPersistentContainer = {
+    static var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
