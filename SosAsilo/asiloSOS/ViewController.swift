@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topBar: UINavigationItem!
     
-    let model = AsiloModel.asilos()
+    let model = AsiloModel.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,8 +50,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func sendNotification() {
         
         let content = UNMutableNotificationContent()
-        content.title = "ATENÇÃO"
-        content.body = "O asilo Padre Cacique precisa de ajuda"
+        content.title = "ATENÇÃO‼"
+        content.body = "O asilo Padre Cacique precisa de ajuda 👵🏻"
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
         let request = UNNotificationRequest(identifier: "timerDone", content: content, trigger: trigger)
@@ -59,8 +59,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         
         let content2 = UNMutableNotificationContent()
-        content2.title = "O FRIO CHEGOU!!"
-        content2.body = "O asilo Novo Lar precisa de agasalhos"
+        content2.title = "O FRIO CHEGOU‼ ☃️"
+        content2.body = "O asilo Novo Lar precisa de agasalhos 🧣"
         
         let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
         let request2 = UNNotificationRequest(identifier: "timer", content: content2, trigger: trigger2)

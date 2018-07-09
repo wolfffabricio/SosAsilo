@@ -14,7 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var btEntrar: UIButton!
     @IBOutlet weak var iconLogin: UIImageView!
-    
+    @IBOutlet weak var viewLogin: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,31 +22,45 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.emailTextField.delegate = self
         self.senhaTextField.delegate = self
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        //self.navigationController?.navigationBar.shadowImage = UIImage()
 //        self.navigationController?.navigationBar.isTranslucent = true
 //        self.navigationController?.view.backgroundColor = .clear
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+        //self.navigationController?.navigationBar.tintColor = UIColor.white
         //self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         
         self.navigationItem.title = "Login"
         
-        emailTextField.layer.borderColor = UIColor.white.cgColor
-        senhaTextField.layer.borderColor = UIColor.white.cgColor
+        //Cor da Borda
+        emailTextField.layer.borderColor = UIColor.groupTableViewBackground.cgColor
+        senhaTextField.layer.borderColor = UIColor.groupTableViewBackground.cgColor
+        btEntrar.layer.borderColor = UIColor.groupTableViewBackground.cgColor
         
+        //Espessura da borda
         emailTextField.layer.borderWidth = 1.0
         senhaTextField.layer.borderWidth = 1.0
 
+        //Arredondamento
+        emailTextField.layer.cornerRadius = 5
+        emailTextField.layer.borderWidth = 1
+        
+        senhaTextField.layer.cornerRadius = 5
+        senhaTextField.layer.borderWidth = 1
         
         btEntrar.layer.cornerRadius = 5
         btEntrar.layer.borderWidth = 1
-        btEntrar.layer.borderColor = UIColor.white.cgColor
         
+        //Arrendondamento icon
+        iconLogin.layer.borderWidth = 5
+        iconLogin.layer.borderColor = UIColor(red: 0/255.0, green: 150.0/255.0, blue: 255.0/255.0, alpha: 1).cgColor
         iconLogin.layer.masksToBounds = true
         iconLogin.layer.cornerRadius = iconLogin.frame.width / 2
         
-        //emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
-        //senhaTextField.attributedPlaceholder = NSAttributedString(string:"Senha", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
+        //viewLogin.layer.masksToBounds = true
+        viewLogin.layer.cornerRadius = 8
+        
+//        emailTextField.attributedPlaceholder = NSAttributedString(string:"Email", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
+//        senhaTextField.attributedPlaceholder = NSAttributedString(string:"Senha", attributes: [(kCTForegroundColorAttributeName as NSAttributedStringKey) as String: UIColor.white])
         
     }
     
