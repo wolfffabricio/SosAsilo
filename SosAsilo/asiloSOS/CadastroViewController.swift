@@ -19,7 +19,7 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var senhaTextField: UITextField!
     @IBOutlet weak var btCadastrar: UIButton!
-    
+    @IBOutlet weak var viewCadastro: UIView!
     
     var photo = "bg.jpeg"
     var nome = ""
@@ -28,9 +28,6 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
     var cnpj = ""
     var email = ""
     var senha = ""
-
-    
-    
     
     
     override func viewDidLoad() {
@@ -43,7 +40,7 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         self.senhaTextField.delegate = self
         
         self.navigationItem.title = "Cadastro"
-    
+        
         nomeTextField.layer.borderColor = UIColor.white.cgColor
         enderecoTextField.layer.borderColor = UIColor.white.cgColor
         telefoneTextField.layer.borderColor = UIColor.white.cgColor
@@ -62,15 +59,11 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         btCadastrar.layer.borderWidth = 1
         btCadastrar.layer.borderColor = UIColor.white.cgColor
         
+        viewCadastro.layer.cornerRadius = 8
+        
         //implementando db - Rodrigo Andreaza
         
-        
-        
-        
         AppDelegate.saveContext()
-        
-        
-        
         
     }
     
@@ -83,20 +76,20 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-//    func newInstituicao(nome: String, email: String, senha: String) -> Instituicao {
-//
-//        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
-//        instituicao.nome = nome
-//        instituicao.email = email
-//        instituicao.senha = senha
-//
-//        return instituicao
-//
-//    }
+    //    func newInstituicao(nome: String, email: String, senha: String) -> Instituicao {
+    //
+    //        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
+    //        instituicao.nome = nome
+    //        instituicao.email = email
+    //        instituicao.senha = senha
+    //
+    //        return instituicao
+    //
+    //    }
     
     
     @IBAction func btCadastrar(_ sender: UIButton) {
-      //add db
+        //add db
         
         nome = nomeTextField.text!
         endereco = enderecoTextField.text!
@@ -104,19 +97,19 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         cnpj = cnpjTextField.text!
         email = emailTextField.text!
         senha = senhaTextField.text!
-
-        AsiloModel.shared.data.append(Asilo(nomeInstituicao: nome, endereco: endereco, photo: photo, telefone: telefone, email: email, cnpj: cnpj, senha: senha))
-
         
-// DESCOMENTAR A FUNÇÃO A NEW ISNTUIÇÃO
-//        AsiloModel.shared.data.forEach { asilo in
-//            self.newInstituicao(nome: asilo.nomeInstituicao, email: asilo.email, senha: asilo.senha)
-//        }
+        AsiloModel.shared.data.append(Asilo(nomeInstituicao: nome, endereco: endereco, photo: photo, telefone: telefone, email: email, cnpj: cnpj, senha: senha))
+        
+        
+        // DESCOMENTAR A FUNÇÃO A NEW ISNTUIÇÃO
+        //        AsiloModel.shared.data.forEach { asilo in
+        //            self.newInstituicao(nome: asilo.nomeInstituicao, email: asilo.email, senha: asilo.senha)
+        //        }
         
         //let instituicaoBD = newInstituicoes()
-      
         
-      
+        
+        
         
         
     }
