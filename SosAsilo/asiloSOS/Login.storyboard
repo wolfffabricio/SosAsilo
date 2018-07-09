@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hvM-u5-ceo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,8 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-7C-6hv">
-                                <rect key="frame" x="50" y="293" width="275" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeB-yc-7Yc">
+                                <rect key="frame" x="16" y="234" width="343" height="370"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DPj-7C-6hv">
+                                <rect key="frame" x="50" y="340" width="275" height="30"/>
                                 <color key="backgroundColor" white="0.68694759739769828" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -31,8 +36,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lb1-ox-kcJ">
-                                <rect key="frame" x="50" y="243" width="275" height="30"/>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lb1-ox-kcJ">
+                                <rect key="frame" x="50" y="290" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -43,8 +48,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow7-oz-T53">
-                                <rect key="frame" x="50" y="403" width="275" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow7-oz-T53">
+                                <rect key="frame" x="50" y="450" width="275" height="30"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Registrar-se"/>
                                 <connections>
@@ -52,8 +57,8 @@
                                     <segue destination="tEJ-e8-IKJ" kind="show" identifier="cadastroSegue" id="eFD-MN-dzM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-NN-13p">
-                                <rect key="frame" x="50" y="363" width="275" height="30"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Df-NN-13p">
+                                <rect key="frame" x="50" y="410" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Entrar"/>
@@ -62,7 +67,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icone1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="SaP-9n-N3G">
-                                <rect key="frame" x="134" y="111" width="107" height="104"/>
+                                <rect key="frame" x="134" y="76" width="107" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -79,7 +84,7 @@
                             <constraint firstItem="DPj-7C-6hv" firstAttribute="leading" secondItem="hm8-iO-ARF" secondAttribute="leading" constant="50" id="cTa-j9-yyv"/>
                             <constraint firstItem="3Df-NN-13p" firstAttribute="top" secondItem="DPj-7C-6hv" secondAttribute="bottom" constant="40" id="lSU-tz-GJa"/>
                             <constraint firstItem="lb1-ox-kcJ" firstAttribute="leading" secondItem="hm8-iO-ARF" secondAttribute="leading" constant="50" id="m27-y9-jRw"/>
-                            <constraint firstItem="lb1-ox-kcJ" firstAttribute="top" secondItem="hm8-iO-ARF" secondAttribute="top" constant="179" id="oY9-Vh-o57"/>
+                            <constraint firstItem="lb1-ox-kcJ" firstAttribute="top" secondItem="hm8-iO-ARF" secondAttribute="top" constant="270" id="oY9-Vh-o57"/>
                             <constraint firstItem="hm8-iO-ARF" firstAttribute="trailing" secondItem="lb1-ox-kcJ" secondAttribute="trailing" constant="50" id="zwZ-7X-r1Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hm8-iO-ARF"/>
@@ -107,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoS-OT-cbf">
-                                <rect key="frame" x="50" y="262" width="275" height="30"/>
+                                <rect key="frame" x="50" y="248" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -119,7 +124,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FX1-jO-cJU">
-                                <rect key="frame" x="50" y="312" width="275" height="30"/>
+                                <rect key="frame" x="50" y="298" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -131,7 +136,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CNPJ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ome-Ue-79J">
-                                <rect key="frame" x="50" y="362" width="275" height="30"/>
+                                <rect key="frame" x="50" y="348" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -143,7 +148,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-Pf-8aU">
-                                <rect key="frame" x="50" y="462" width="275" height="30"/>
+                                <rect key="frame" x="50" y="448" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -155,7 +160,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w04-B3-ZEH">
-                                <rect key="frame" x="50" y="412" width="275" height="30"/>
+                                <rect key="frame" x="50" y="398" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -167,13 +172,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="bDy-Rh-TQD">
-                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="5Ye-B0-Zli"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PV-Wy-2VS">
-                                <rect key="frame" x="50" y="532" width="275" height="30"/>
+                                <rect key="frame" x="50" y="518" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Cadastrar"/>
@@ -183,7 +188,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6B-gx-uTv">
-                                <rect key="frame" x="50" y="212" width="275" height="30"/>
+                                <rect key="frame" x="50" y="198" width="275" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -204,7 +209,7 @@
                             <constraint firstItem="9cv-YJ-Lfq" firstAttribute="trailing" secondItem="8Ba-Pf-8aU" secondAttribute="trailing" constant="50" id="AkZ-8P-tle"/>
                             <constraint firstItem="FX1-jO-cJU" firstAttribute="leading" secondItem="9cv-YJ-Lfq" secondAttribute="leading" constant="50" id="B75-RF-Xnq"/>
                             <constraint firstItem="w04-B3-ZEH" firstAttribute="leading" secondItem="9cv-YJ-Lfq" secondAttribute="leading" constant="50" id="DAK-tS-9Mc"/>
-                            <constraint firstItem="Y6B-gx-uTv" firstAttribute="top" secondItem="bDy-Rh-TQD" secondAttribute="bottom" constant="20" id="FDr-xm-cia"/>
+                            <constraint firstItem="Y6B-gx-uTv" firstAttribute="top" secondItem="bDy-Rh-TQD" secondAttribute="bottom" constant="50" id="FDr-xm-cia"/>
                             <constraint firstItem="Y6B-gx-uTv" firstAttribute="leading" secondItem="9cv-YJ-Lfq" secondAttribute="leading" constant="50" id="FZ3-uo-OaL"/>
                             <constraint firstItem="9cv-YJ-Lfq" firstAttribute="trailing" secondItem="HoS-OT-cbf" secondAttribute="trailing" constant="50" id="G2y-mO-ILu"/>
                             <constraint firstItem="Ome-Ue-79J" firstAttribute="top" secondItem="FX1-jO-cJU" secondAttribute="bottom" constant="20" id="Utd-5r-zy1"/>
@@ -243,7 +248,7 @@
         <!--Second-->
         <scene sceneID="Prc-qR-Ht4">
             <objects>
-                <viewController id="7j7-OM-i4u" customClass="SecondViewController" customModule="asilo_app_tab_bar_certo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7j7-OM-i4u" customClass="SecondViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KgN-0s-8S1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -589,8 +594,8 @@
     </scenes>
     <resources>
         <image name="bg" width="1170" height="620"/>
-        <image name="icone1024x1024" width="1024" height="1024"/>
         <image name="checkBoxUnmarked" width="16" height="16"/>
+        <image name="icone1024x1024" width="1024" height="1024"/>
         <image name="profile" width="29" height="29"/>
         <image name="second" width="16" height="16"/>
     </resources>

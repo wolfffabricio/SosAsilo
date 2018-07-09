@@ -2,9 +2,8 @@ import Foundation
 
 struct AsiloModel {
     
-    var data = [Asilo]()
-    
-    static public func asilos() -> AsiloModel {
+    static var shared: AsiloModel = {
+        
         var model = AsiloModel()
         
         model.data.append(Asilo(nomeInstituicao: "Lar de Idosos Santa Ana", endereco: "Rua Waldomiro Schapke - Intercap", photo: "bg.jpg", telefone: "(51) 3315-3408", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
@@ -16,7 +15,8 @@ struct AsiloModel {
         model.data.append(Asilo(nomeInstituicao: "Asilo Lar da Fraternidade", endereco: "R. Pedro Álvares Cabral, 225 - Nossa Sra. das Gracas", photo: "asilo6", telefone: "(51) 3463-3435", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
         
         return model
-    }
+    }()
     
+    var data = [Asilo]()
     
 }
