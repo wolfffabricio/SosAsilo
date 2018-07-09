@@ -11,12 +11,16 @@ import UIKit
 class SecondViewController: UIViewController {
     @IBOutlet weak var AsiloTableView: UITableView!
     var asilo: Asilo!
+    @IBOutlet weak var viewCircles: UIView!
     @IBOutlet weak var photoAsilo: UIImageView!
+    @IBOutlet weak var loaderAlimentos: CircleProgressView!
+    @IBOutlet weak var viewInfo: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         photoAsilo.image = UIImage(named: "\(asilo.photo)")
-
+        viewCircles.layer.cornerRadius = 4
+        viewInfo.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 

@@ -7,5 +7,6 @@ target 'asiloSOS' do
   pod 'Firebase/Core'
   pod 'RevealingSplashView'
   pod 'LBTAComponents'
+  pod 'CircleProgressView', :git => 'https://github.com/CardinalNow/iOS-CircleProgressView.git'
 
 end
