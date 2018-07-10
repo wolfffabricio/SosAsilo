@@ -11,6 +11,7 @@ import CoreData
 
 class CadastroViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var icoCadastro: UIImageView!
     @IBOutlet weak var photoInst: UIImageView!
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
@@ -61,6 +62,12 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         
         viewCadastro.layer.cornerRadius = 8
         
+        
+        //Arrendondamento icon
+        icoCadastro.layer.borderWidth = 5
+        icoCadastro.layer.borderColor = UIColor(red: 0/255.0, green: 150.0/255.0, blue: 255.0/255.0, alpha: 1).cgColor
+        icoCadastro.layer.masksToBounds = true
+        icoCadastro.layer.cornerRadius = icoCadastro.frame.width / 2
         //implementando db - Rodrigo Andreaza
         
         AppDelegate.saveContext()
