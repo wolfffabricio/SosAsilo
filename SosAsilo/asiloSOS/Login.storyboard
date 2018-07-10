@@ -136,7 +136,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYo-A8-a7d">
                                 <rect key="frame" x="30" y="134" width="315" height="437"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2as-94-RSv">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Instituição" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2as-94-RSv">
                                         <rect key="frame" x="30" y="73" width="255" height="30"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -156,7 +156,7 @@
                                             <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="btCadastrar:" destination="tEJ-e8-IKJ" eventType="touchUpInside" id="QWD-z4-Lk6"/>
+                                            <action selector="btnCadastra:" destination="tEJ-e8-IKJ" eventType="touchUpInside" id="Mba-PT-LIt"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-m0-0tq">
@@ -271,7 +271,7 @@
                         <viewLayoutGuide key="safeArea" id="9cv-YJ-Lfq"/>
                     </view>
                     <connections>
-                        <outlet property="btCadastrar" destination="o9Q-FI-QBo" id="4gF-tX-Acz"/>
+                        <outlet property="btCadastrar" destination="o9Q-FI-QBo" id="jG9-B9-uPz"/>
                         <outlet property="cnpjTextField" destination="fT9-9m-bTm" id="xVj-cN-LST"/>
                         <outlet property="emailTextField" destination="foq-NQ-KGf" id="cPR-di-YN6"/>
                         <outlet property="enderecoTextField" destination="74c-N6-8w6" id="31z-WQ-5vL"/>

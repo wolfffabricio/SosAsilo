@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -15,9 +16,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btEntrar: UIButton!
     @IBOutlet weak var iconLogin: UIImageView!
     @IBOutlet weak var viewLogin: UIView!
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let request: NSFetchRequest<Asilos> = Asilos.fetchRequest()
+        
+        let results = try! AppDelegate.persistentContainer.viewContext.fetch(request)
+        
+        print(results.first)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+
         
         self.emailTextField.delegate = self
         self.senhaTextField.delegate = self

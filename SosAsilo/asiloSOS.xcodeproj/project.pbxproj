@@ -31,6 +31,7 @@
 		A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */; };
 		A7C2F69D20E6718600D9F216 /* AsiloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69C20E6718600D9F216 /* AsiloModel.swift */; };
 		A7DA1B2F20F4ED29007C594D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7DA1B2E20F4ED29007C594D /* FirstViewController.swift */; };
+		A7DA1B3220F4EF77007C594D /* asiloSOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7DA1B3020F4EF77007C594D /* asiloSOS.xcdatamodeld */; };
 		A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A289549C20E5031C000F39AE /* Main.storyboard */; };
 		BA798C3E410941BFF0DB0D3A /* Pods_asiloSOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12AC12A8183F1950321B58DC /* Pods_asiloSOS.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerCustom.swift; sourceTree = "<group>"; };
 		A7C2F69C20E6718600D9F216 /* AsiloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiloModel.swift; sourceTree = "<group>"; };
 		A7DA1B2E20F4ED29007C594D /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A7DA1B3120F4EF77007C594D /* asiloSOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = asiloSOS.xcdatamodel; sourceTree = "<group>"; };
 		D941BB5D6325D7ADB6C65F3A /* Pods-asiloSOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asiloSOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-asiloSOS/Pods-asiloSOS.release.xcconfig"; sourceTree = "<group>"; };
 		E7AB24D9AB58495C4776798B /* Pods-asiloSOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-asiloSOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-asiloSOS/Pods-asiloSOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 		A289548C20E5031C000F39AE = {
 			isa = PBXGroup;
 			children = (
+				A7DA1B3020F4EF77007C594D /* asiloSOS.xcdatamodeld */,
 				A289549720E5031C000F39AE /* asiloSOS */,
 				A289549620E5031C000F39AE /* Products */,
 				7C1E82E2CB6D6BB7EA77DAFC /* Pods */,
@@ -286,6 +289,7 @@
 				A28954B520E51256000F39AE /* voluntario.swift in Sources */,
 				A28954B920E51E5A000F39AE /* SecondViewController.swift in Sources */,
 				A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */,
+				A7DA1B3220F4EF77007C594D /* asiloSOS.xcdatamodeld in Sources */,
 				45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */,
 				A289549B20E5031C000F39AE /* ViewController.swift in Sources */,
 				A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */,
@@ -489,6 +493,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A7DA1B3020F4EF77007C594D /* asiloSOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A7DA1B3120F4EF77007C594D /* asiloSOS.xcdatamodel */,
+			);
+			currentVersion = A7DA1B3120F4EF77007C594D /* asiloSOS.xcdatamodel */;
+			path = asiloSOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A289548D20E5031C000F39AE /* Project object */;
 }

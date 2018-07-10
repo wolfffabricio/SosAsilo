@@ -6,13 +6,18 @@ struct AsiloModel {
         
         var model = AsiloModel()
         
-        model.data.append(Asilo(nomeInstituicao: "Lar de Idosos Santa Ana", endereco: "Rua Waldomiro Schapke - Intercap", photo: "bg.jpg", telefone: "(51) 3315-3408", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Lar Maria de Nazaré", endereco: "Av. Cel. Lucas de Oliveira, 2746 - Petrópolis", photo: "asilo1", telefone: " (51) 3209-3932", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Lar Dom Guanella", endereco: "Rua Tenente Ary Tarragô - Alto Petrópolis", photo: "asilo2", telefone: "(51) 3372-6957", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Asilo Santa Bárbara", endereco: "R. Taquara, 48 - Walderez", photo: "asilo3", telefone: "(51) 3453-7793", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Asilo Padre Cacique", endereco: "Av. Padre Cacique, 1178 - Menino Deus", photo: "asilo4", telefone: "(51) 3233-7571", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Asilo Nossa Senhora Medianeira", endereco: "R. Amazonas, 975 - Neópolis", photo: "asilo5", telefone: " (51) 3043-5602", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
-        model.data.append(Asilo(nomeInstituicao: "Asilo Lar da Fraternidade", endereco: "R. Pedro Álvares Cabral, 225 - Nossa Sra. das Gracas", photo: "asilo6", telefone: "(51) 3463-3435", email: "email@teste.com",cnpj: "teste" ,senha: "teste"))
+        model.data.append(Asilo(id: "234",nome: "Lar de Idosos Santa Ana", email: "email@gmail.com", senha: "12345", photo: "bg.jpg", telefone: "(51) 3315-3408", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "Rua Tal", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        model.data.append(Asilo(id: "234",nome: "Lar Maria de Nazaré", email: "email@gmail.com", senha: "12345", photo: "asilo1", telefone: "(51) 3209-3932", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "Av. Cel. Lucas de Oliveira, 2746 - Petrópolis", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        model.data.append(Asilo(id: "234",nome: "Lar Dom Guanella", email: "email@gmail.com", senha: "12345", photo: "asilo2", telefone: "(51) 3372-6957", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "Rua Tenente Ary Tarragô - Alto Petrópolis", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        
+        
+        
+        
+        
+        model.data.append(Asilo(id: "234",nome: "Asilo Santa Bárbara", email: "email@gmail.com", senha: "12345", photo: "asilo3", telefone: "(51) 3453-7793", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "R. Taquara, 48 - Walderez", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        model.data.append(Asilo(id: "234",nome: "Asilo Padre Cacique", email: "email@gmail.com", senha: "12345", photo: "asilo4", telefone: "(51) 3233-7571", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "Av. Padre Cacique, 1178 - Menino Deus", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        model.data.append(Asilo(id: "234",nome: "Asilo Nossa Senhora Medianeira", email: "email@gmail.com", senha: "12345", photo: "asilo5", telefone: "(51) 3315-3408", cnpj: "05.418.914/0001-90" ,site: "www", endereco: "R. Amazonas, 975 - Neópolis", sobre: "Sobre Lar de Idosos Santa Ana", indAlimentacao: 0.3, indEntretenimento: 0.4, indHigiene: 0.7,indMedicamentos: 0.9))
+        
         
         return model
     }()

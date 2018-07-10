@@ -87,7 +87,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         cell.view.layer.cornerRadius = 4
         
-        cell.labelNome.text = asilo.nomeInstituicao
+        cell.labelNome.text = asilo.nome
         cell.labelEndereco.text = asilo.endereco
         cell.photoAsilo.image = UIImage(named: "\(asilo.photo)")
         

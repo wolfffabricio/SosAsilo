@@ -9,10 +9,10 @@
 import UIKit
 import CoreData
 
-class CadastroViewController: UIViewController, UITextFieldDelegate {
+class CadastroViewController: UIViewController {
     
     @IBOutlet weak var icoCadastro: UIImageView!
-    @IBOutlet weak var photoInst: UIImageView!
+    
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
@@ -22,23 +22,80 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var btCadastrar: UIButton!
     @IBOutlet weak var viewCadastro: UIView!
     
-    var photo = "bg.jpeg"
-    var nome = ""
-    var endereco = ""
-    var telefone = ""
-    var cnpj = ""
-    var email = ""
-    var senha = ""
+    @IBAction func btnCadastra(_ sender: UIButton) {
+        if (nomeTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }
+        else if (enderecoTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }
+        else if (telefoneTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }
+        else if (cnpjTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }
+        else if (emailTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }
+        else if (senhaTextField.text?.isEmpty ?? true){
+            exibeAlerta()
+        }else{
+            
+            let asilo = Asilos(context: AppDelegate.persistentContainer.viewContext)
+            asilo.id = "2445"
+            asilo.nome = nomeTextField.text
+            asilo.email = emailTextField.text
+            asilo.senha = senhaTextField.text
+            asilo.photo = "bg.jpg"
+            asilo.telefone = telefoneTextField.text
+            asilo.cnpj = cnpjTextField.text
+            asilo.site = "sitedoasilo"
+            asilo.endereco = enderecoTextField.text
+            asilo.sobre = "Sobre este asilo"
+            asilo.indAlimentacao = 0.0
+            asilo.indEntretenimento = 0.0
+            asilo.indHigiene = 0.0
+            asilo.indMedicamentos = 0.0
+            print("preenchido")
+            
+            //AppDelegate.saveContext()
+        }
+    }
     
+    func exibeAlerta (){
+        let alert = UIAlertController(title: "Ops, algo errado", message: "Preencha todos os campos do seu cadastro", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
+            
+        })
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+//    @IBAction func saveItem(_ sender: Any) {
+//
+//        guard let enteredText = nomeTextField?.text else {
+//            return
+//        }
+//
+//
+//            guard let entryText = nomeTextField?.text else {
+//                return
+//            }
+//
+//            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//            let newEntry = Item(context: context)
+//            newEntry.name = entryText
+//
+//            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+//
+//            dismiss(animated: true, completion: nil)
+//
+//        }
+//
+//    }
     
     override func viewDidLoad() {
-        
-        self.nomeTextField.delegate = self
-        self.enderecoTextField.delegate = self
-        self.telefoneTextField.delegate = self
-        self.cnpjTextField.delegate = self
-        self.emailTextField.delegate = self
-        self.senhaTextField.delegate = self
         
         self.navigationItem.title = "Cadastro"
         
@@ -62,7 +119,6 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         
         viewCadastro.layer.cornerRadius = 8
         
-        
         //Arrendondamento icon
         icoCadastro.layer.borderWidth = 5
         icoCadastro.layer.borderColor = UIColor(red: 0/255.0, green: 150.0/255.0, blue: 255.0/255.0, alpha: 1).cgColor
@@ -82,42 +138,5 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
-    //    func newInstituicao(nome: String, email: String, senha: String) -> Instituicao {
-    //
-    //        let instituicao = Instituicao(context: AppDelegate.persistentContainer.viewContext)
-    //        instituicao.nome = nome
-    //        instituicao.email = email
-    //        instituicao.senha = senha
-    //
-    //        return instituicao
-    //
-    //    }
-    
-    
-    @IBAction func btCadastrar(_ sender: UIButton) {
-        //add db
-        
-        nome = nomeTextField.text!
-        endereco = enderecoTextField.text!
-        telefone = telefoneTextField.text!
-        cnpj = cnpjTextField.text!
-        email = emailTextField.text!
-        senha = senhaTextField.text!
-        
-        AsiloModel.shared.data.append(Asilo(nomeInstituicao: nome, endereco: endereco, photo: photo, telefone: telefone, email: email, cnpj: cnpj, senha: senha))
-        
-        
-        // DESCOMENTAR A FUNÇÃO A NEW ISNTUIÇÃO
-        //        AsiloModel.shared.data.forEach { asilo in
-        //            self.newInstituicao(nome: asilo.nomeInstituicao, email: asilo.email, senha: asilo.senha)
-        //        }
-        
-        //let instituicaoBD = newInstituicoes()
-        
-        
-        
-        
-        
-    }
+
 }
