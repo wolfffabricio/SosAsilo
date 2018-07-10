@@ -17,7 +17,11 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var viewInfo: UIView!
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
         photoAsilo.image = UIImage(named: "\(asilo.photo)")
         viewCircles.layer.cornerRadius = 4
         viewInfo.layer.cornerRadius = 4

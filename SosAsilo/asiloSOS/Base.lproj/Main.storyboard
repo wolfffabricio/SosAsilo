@@ -109,11 +109,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G6O-qr-0P8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="8GU-9i-qI7">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV"/>
                     <connections>
                         <outlet property="tableView" destination="iCy-R0-oxO" id="xRF-Hb-57F"/>
                         <outlet property="topBar" destination="hnj-d8-odV" id="akB-HI-yIZ"/>

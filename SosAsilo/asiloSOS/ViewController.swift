@@ -21,6 +21,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Remove título do back button
+        let backItem = UIBarButtonItem()
+        backItem.title = nil
+        navigationItem.backBarButtonItem = backItem
+        
         self.tableView.rowHeight = 210
         
         UNUserNotificationCenter.current().delegate = self
@@ -91,6 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let asilo = model.data[indexPath.row]
+        
         performSegue(withIdentifier: "mostraDetalhes", sender: asilo)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

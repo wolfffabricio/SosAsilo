@@ -13,7 +13,7 @@
         <!--Perfil-->
         <scene sceneID="AlK-xj-ldz">
             <objects>
-                <viewController storyboardIdentifier="telaLogin" id="jOR-rg-3hx" customClass="LoginViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jOR-rg-3hx" customClass="LoginViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hKO-hl-9Ed">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -625,14 +625,20 @@
         <!--Perfil-->
         <scene sceneID="5lS-dg-jqF">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D3v-sY-L7s" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="telaLogin" automaticallyAdjustsScrollViewInsets="NO" id="D3v-sY-L7s" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Perfil" image="profile" id="SBd-Vu-YXr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="14g-Tw-ik8">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dhh-Wy-T7j">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="jOR-rg-3hx" kind="relationship" relationship="rootViewController" id="Ntv-MD-hgE"/>
                     </connections>
