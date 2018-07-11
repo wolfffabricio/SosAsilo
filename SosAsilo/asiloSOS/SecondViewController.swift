@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CircleProgressView
 
 class SecondViewController: UIViewController {
     @IBOutlet weak var AsiloTableView: UITableView!

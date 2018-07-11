@@ -160,7 +160,7 @@
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" textContentType="street-address"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="street-address"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                                 <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -224,6 +224,7 @@
                                         </state>
                                         <connections>
                                             <action selector="btnCadastra:" destination="tEJ-e8-IKJ" eventType="touchUpInside" id="Mba-PT-LIt"/>
+                                            <segue destination="Iiu-9y-n2L" kind="show" identifier="mostraPerfil" id="x1K-9y-64h"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -285,6 +286,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tMN-fD-AnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2384.8000000000002" y="99.400299850074973"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="SF5-eT-DM8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="telaPerfil" storyboardName="Main" id="Iiu-9y-n2L" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fS1-3e-gVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2362" y="590"/>
         </scene>
         <!--Second-->
         <scene sceneID="Prc-qR-Ht4">

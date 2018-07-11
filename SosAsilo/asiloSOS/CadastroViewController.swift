@@ -63,7 +63,9 @@ class CadastroViewController: UIViewController {
             
             //AppDelegate.saveContext()
             
-            self.ref.child("asilos").childByAutoId().setValue(["nome": nomeTextField.text!, "email": emailTextField.text!, "senha": senhaTextField.text!, "photo": "bg", "telefone": telefoneTextField.text!, "cnpj": cnpjTextField.text!, "site": "", "endereco": enderecoTextField.text!, "sobre": "", "indAlimentos": 0.0, "indEntretenimento": 0.0, "indHigiene": 0.0, "indMedicamentos": 0.0])
+            //self.ref.child("asilos").childByAutoId().setValue(["nome": nomeTextField.text!, "email": emailTextField.text!, "senha": senhaTextField.text!, "photo": "bg", "telefone": telefoneTextField.text!, "cnpj": cnpjTextField.text!, "site": "", "endereco": enderecoTextField.text!, "sobre": "", "indAlimentos": 0.0, "indEntretenimento": 0.0, "indHigiene": 0.0, "indMedicamentos": 0.0])
+            
+            performSegue(withIdentifier: "mostraPerfil", sender: asilo)
         }
     }
     
