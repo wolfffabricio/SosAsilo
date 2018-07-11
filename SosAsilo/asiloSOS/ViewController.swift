@@ -21,7 +21,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         //Remove título do back button
         let backItem = UIBarButtonItem()
         backItem.title = nil
@@ -101,7 +100,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         performSegue(withIdentifier: "mostraDetalhes", sender: asilo)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? SecondViewController, segue.identifier == "mostraDetalhes"{
+        if let vc = segue.destination as? DetailsAsiloViewController, segue.identifier == "mostraDetalhes"{
             guard let asilo = sender as? Asilo else {return}
             vc.asilo = asilo
         }

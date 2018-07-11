@@ -8,15 +8,19 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-    @IBOutlet weak var AsiloTableView: UITableView!
+class DetailsAsiloViewController: UIViewController {
+    
     var asilo: Asilo!
+
+    @IBOutlet weak var AsiloTableView: UITableView!
     @IBOutlet weak var viewCircles: UIView!
     @IBOutlet weak var photoAsilo: UIImageView!
     @IBOutlet weak var loaderAlimentos: CircleProgressView!
     @IBOutlet weak var viewInfo: UIView!
     
     override func viewDidLoad() {
+        
+        
 
         super.viewDidLoad()
         
