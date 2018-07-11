@@ -14,6 +14,9 @@
 		45A400FF20E6982900122F89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A400FE20E6982900122F89 /* Login.storyboard */; };
 		45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010020E69BA400122F89 /* LoginViewController.swift */; };
 		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
+		45BD90BD20F626260034B989 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD90BC20F626260034B989 /* PerfilViewController.swift */; };
+		45BD90BF20F6265B0034B989 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45BD90BE20F6265B0034B989 /* Perfil.storyboard */; };
+		45BD90C120F62D3A0034B989 /* PerfilAsiloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BD90C020F62D3A0034B989 /* PerfilAsiloViewController.swift */; };
 		A289549920E5031C000F39AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549820E5031C000F39AE /* AppDelegate.swift */; };
 		A289549B20E5031C000F39AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A289549A20E5031C000F39AE /* ViewController.swift */; };
 		A28954A320E5031D000F39AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28954A220E5031D000F39AE /* Assets.xcassets */; };
@@ -22,7 +25,7 @@
 		A28954B020E50711000F39AE /* view.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954AF20E50711000F39AE /* view.swift */; };
 		A28954B320E50EF4000F39AE /* Asilo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954B220E50EF4000F39AE /* Asilo.swift */; };
 		A28954B520E51256000F39AE /* voluntario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954B420E51256000F39AE /* voluntario.swift */; };
-		A28954B920E51E5A000F39AE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954B820E51E5A000F39AE /* SecondViewController.swift */; };
+		A28954B920E51E5A000F39AE /* DetailsAsiloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954B820E51E5A000F39AE /* DetailsAsiloViewController.swift */; };
 		A28954BB20E51F40000F39AE /* AsiloCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954BA20E51F40000F39AE /* AsiloCell.swift */; };
 		A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28954BE20E526A3000F39AE /* voluntarioModel.swift */; };
 		A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */; };
@@ -45,6 +48,9 @@
 		45A400FE20E6982900122F89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45A4010020E69BA400122F89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45A4010220E6AD0100122F89 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		45BD90BC20F626260034B989 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		45BD90BE20F6265B0034B989 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		45BD90C020F62D3A0034B989 /* PerfilAsiloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilAsiloViewController.swift; sourceTree = "<group>"; };
 		A289549520E5031C000F39AE /* asiloSOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = asiloSOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A289549820E5031C000F39AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A289549A20E5031C000F39AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		A28954AF20E50711000F39AE /* view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = view.swift; sourceTree = "<group>"; };
 		A28954B220E50EF4000F39AE /* Asilo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asilo.swift; sourceTree = "<group>"; };
 		A28954B420E51256000F39AE /* voluntario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voluntario.swift; sourceTree = "<group>"; };
-		A28954B820E51E5A000F39AE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A28954B820E51E5A000F39AE /* DetailsAsiloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAsiloViewController.swift; sourceTree = "<group>"; };
 		A28954BA20E51F40000F39AE /* AsiloCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiloCell.swift; sourceTree = "<group>"; };
 		A28954BE20E526A3000F39AE /* voluntarioModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voluntarioModel.swift; sourceTree = "<group>"; };
 		A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A289549C20E5031C000F39AE /* Main.storyboard */,
+				45BD90BE20F6265B0034B989 /* Perfil.storyboard */,
 				45A400FE20E6982900122F89 /* Login.storyboard */,
 				450A658720ED07FF00AC6AF8 /* Notification.storyboard */,
 				A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */,
@@ -129,8 +136,10 @@
 				A289549820E5031C000F39AE /* AppDelegate.swift */,
 				A289549A20E5031C000F39AE /* ViewController.swift */,
 				450A658920ED083100AC6AF8 /* NotificationViewController.swift */,
-				A28954B820E51E5A000F39AE /* SecondViewController.swift */,
+				A28954B820E51E5A000F39AE /* DetailsAsiloViewController.swift */,
 				45A4010020E69BA400122F89 /* LoginViewController.swift */,
+				45BD90C020F62D3A0034B989 /* PerfilAsiloViewController.swift */,
+				45BD90BC20F626260034B989 /* PerfilViewController.swift */,
 				A7DA1B2E20F4ED29007C594D /* FirstViewController.swift */,
 				A753B0BD20F39604004C2A94 /* CircleProgressView.swift */,
 				45A4010220E6AD0100122F89 /* CadastroViewController.swift */,
@@ -224,6 +233,7 @@
 				A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */,
 				A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */,
 				A28954A320E5031D000F39AE /* Assets.xcassets in Resources */,
+				45BD90BF20F6265B0034B989 /* Perfil.storyboard in Resources */,
 				45A400FF20E6982900122F89 /* Login.storyboard in Resources */,
 				450A658820ED07FF00AC6AF8 /* Notification.storyboard in Resources */,
 			);
@@ -289,7 +299,8 @@
 				A28954B320E50EF4000F39AE /* Asilo.swift in Sources */,
 				450A658C20ED0F7300AC6AF8 /* ListaNotificationCell.swift in Sources */,
 				A28954B520E51256000F39AE /* voluntario.swift in Sources */,
-				A28954B920E51E5A000F39AE /* SecondViewController.swift in Sources */,
+				45BD90C120F62D3A0034B989 /* PerfilAsiloViewController.swift in Sources */,
+				A28954B920E51E5A000F39AE /* DetailsAsiloViewController.swift in Sources */,
 				A28954BF20E526A3000F39AE /* voluntarioModel.swift in Sources */,
 				45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */,
 				A289549B20E5031C000F39AE /* ViewController.swift in Sources */,
@@ -300,6 +311,7 @@
 				450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */,
 				DD5142E520F6241600BEAFAB /* FAQViewController.swift in Sources */,
 				A28954B020E50711000F39AE /* view.swift in Sources */,
+				45BD90BD20F626260034B989 /* PerfilViewController.swift in Sources */,
 				A7DA1B2F20F4ED29007C594D /* FirstViewController.swift in Sources */,
 				A753B0BC20EF981A004C2A94 /* Notifications.swift in Sources */,
 				45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */,
