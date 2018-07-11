@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,22 +32,14 @@
                                     <constraint firstAttribute="height" constant="97" id="gb4-UU-WH2"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S.O.S Asilo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ET7-cm-8lS">
-                                <rect key="frame" x="165.66666666666666" y="477.66666666666669" width="83" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sDv-bj-8Of" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="4" id="5PI-Wz-gTV"/>
-                            <constraint firstItem="ET7-cm-8lS" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7EI-rr-PfU"/>
                             <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Mm1-0U-aoL"/>
                             <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OOY-jL-Kcb"/>
                             <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="V2z-A8-fPd"/>
                             <constraint firstItem="sDv-bj-8Of" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="60" id="fYh-cv-87P"/>
-                            <constraint firstItem="ET7-cm-8lS" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="120" id="jMx-oN-xgJ"/>
                             <constraint firstItem="JXZ-cA-GK0" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kTE-jA-fv4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

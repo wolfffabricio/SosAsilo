@@ -8,5 +8,6 @@ target 'asiloSOS' do
   pod 'RevealingSplashView'
   pod 'LBTAComponents'
   pod 'CircleProgressView', :git => 'https://github.com/CardinalNow/iOS-CircleProgressView.git'
+  pod 'FAQView', '~> 0.5.0'
 
 end

@@ -624,6 +624,44 @@ contato@santoantonio.com.br</string>
             </objects>
             <point key="canvasLocation" x="2868" y="924"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="We0-a8-XPk">
+            <objects>
+                <viewController id="KmY-eB-9kQ" customClass="FAQViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qMR-6M-V9A"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wml-Dg-JqM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pfc-WE-nPz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="34y-e1-gvi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9ry-z7-P2G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ztm-LY-XqU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5634" y="-537"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EuT-0g-P7J">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbp-QB-5fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJu-ve-pNN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lni-w8-ZmA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KmY-eB-9kQ" kind="relationship" relationship="rootViewController" id="QeH-hS-dfv"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="4746" y="-537"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bell" width="29" height="29"/>

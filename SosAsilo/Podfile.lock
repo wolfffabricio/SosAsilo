@@ -1,5 +1,6 @@
 PODS:
   - CircleProgressView (1.1.3)
+  - FAQView (0.5.0)
   - Firebase/Core (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.0.1)
@@ -27,12 +28,14 @@ PODS:
 
 DEPENDENCIES:
   - CircleProgressView (from `https://github.com/CardinalNow/iOS-CircleProgressView.git`)
+  - FAQView (~> 0.5.0)
   - Firebase/Core
   - LBTAComponents
   - RevealingSplashView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FAQView
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -53,6 +56,7 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   CircleProgressView: c49f2ca6cf170a6c80fc9a054eb5a73122c5e188
+  FAQView: 3be1ca502c3ef1f789bd1c1611ec23458f63fad2
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
@@ -62,6 +66,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
 
-PODFILE CHECKSUM: 8499f7574420cd843ff0174dc69d84af7690e26d
+PODFILE CHECKSUM: 16cf6ecf1930cf75e681c71793259cadc0ebf67c
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

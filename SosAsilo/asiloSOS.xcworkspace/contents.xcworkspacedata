@@ -5,9 +5,6 @@
       location = "group:asiloSOS.xcdatamodeld">
    </FileRef>
    <FileRef
-      location = "group:/Users/fabricio.wolff/Desktop/App/SosAsilo/SosAsilo/asiloSOS.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
