@@ -62,6 +62,25 @@ class CadastroViewController: UIViewController, UITextFieldDelegate {
         
         viewCadastro.layer.cornerRadius = 8
         
+        //Arredondamento
+        nomeTextField.layer.cornerRadius = 5
+        nomeTextField.layer.borderWidth = 1
+        
+        enderecoTextField.layer.cornerRadius = 5
+        enderecoTextField.layer.borderWidth = 1
+        
+        telefoneTextField.layer.cornerRadius = 5
+        telefoneTextField.layer.borderWidth = 1
+        
+        cnpjTextField.layer.cornerRadius = 5
+        cnpjTextField.layer.borderWidth = 1
+        
+        emailTextField.layer.cornerRadius = 5
+        emailTextField.layer.borderWidth = 1
+        
+        senhaTextField.layer.cornerRadius = 5
+        senhaTextField.layer.borderWidth = 1
+        
         
         //Arrendondamento icon
         icoCadastro.layer.borderWidth = 5
