@@ -148,17 +148,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-FI-QBo">
-                                        <rect key="frame" x="26" y="383" width="255" height="30"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Cadastrar">
-                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="btnCadastra:" destination="tEJ-e8-IKJ" eventType="touchUpInside" id="Mba-PT-LIt"/>
-                                        </connections>
-                                    </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="wgB-m0-0tq">
                                         <rect key="frame" x="104" y="-51" width="107" height="104"/>
                                         <constraints>
@@ -226,6 +215,17 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9Q-FI-QBo">
+                                        <rect key="frame" x="30" y="383" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCadastra:" destination="tEJ-e8-IKJ" eventType="touchUpInside" id="Mba-PT-LIt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -249,9 +249,9 @@
                                     <constraint firstAttribute="trailing" secondItem="foq-NQ-KGf" secondAttribute="trailing" constant="30" id="iDm-Wo-BDz"/>
                                     <constraint firstAttribute="height" constant="437" id="lVc-W6-Ro6"/>
                                     <constraint firstItem="2as-94-RSv" firstAttribute="top" secondItem="wgB-m0-0tq" secondAttribute="bottom" constant="20" id="lXO-FN-7Qr"/>
-                                    <constraint firstItem="o9Q-FI-QBo" firstAttribute="leading" secondItem="MYo-A8-a7d" secondAttribute="leading" constant="26" id="lcf-HV-3kz"/>
+                                    <constraint firstItem="o9Q-FI-QBo" firstAttribute="leading" secondItem="MYo-A8-a7d" secondAttribute="leading" constant="30" id="lcf-HV-3kz"/>
                                     <constraint firstItem="74c-N6-8w6" firstAttribute="leading" secondItem="MYo-A8-a7d" secondAttribute="leading" constant="30" id="ot2-Of-xr8"/>
-                                    <constraint firstAttribute="trailing" secondItem="o9Q-FI-QBo" secondAttribute="trailing" constant="34" id="s81-hp-RKN"/>
+                                    <constraint firstAttribute="trailing" secondItem="o9Q-FI-QBo" secondAttribute="trailing" constant="30" id="s81-hp-RKN"/>
                                     <constraint firstAttribute="trailing" secondItem="2as-94-RSv" secondAttribute="trailing" constant="30" id="sJO-rO-us7"/>
                                     <constraint firstItem="fT9-9m-bTm" firstAttribute="top" secondItem="ylK-c8-9Kz" secondAttribute="bottom" constant="20" id="uv1-qM-A6d"/>
                                 </constraints>

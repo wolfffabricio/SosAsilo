@@ -8,8 +8,11 @@
 
 import UIKit
 import CoreData
+import FirebaseDatabase
 
 class CadastroViewController: UIViewController {
+    
+    let ref = Database.database().reference()
     
     @IBOutlet weak var icoCadastro: UIImageView!
     
@@ -43,8 +46,7 @@ class CadastroViewController: UIViewController {
         }else{
             
             let asilo = Asilos(context: AppDelegate.persistentContainer.viewContext)
-            asilo.id = "2445"
-            asilo.nome = nomeTextField.text
+            asilo.nome = "12"
             asilo.email = emailTextField.text
             asilo.senha = senhaTextField.text
             asilo.photo = "bg.jpg"
@@ -60,6 +62,8 @@ class CadastroViewController: UIViewController {
             print("preenchido")
             
             //AppDelegate.saveContext()
+            
+            self.ref.child("asilos").childByAutoId().setValue(["nome": nomeTextField.text!, "email": emailTextField.text!, "senha": senhaTextField.text!, "photo": "bg", "telefone": telefoneTextField.text!, "cnpj": cnpjTextField.text!, "site": "", "endereco": enderecoTextField.text!, "sobre": "", "indAlimentos": 0.0, "indEntretenimento": 0.0, "indHigiene": 0.0, "indMedicamentos": 0.0])
         }
     }
     
@@ -96,6 +100,7 @@ class CadastroViewController: UIViewController {
 //    }
     
     override func viewDidLoad() {
+        
         
         self.navigationItem.title = "Cadastro"
         

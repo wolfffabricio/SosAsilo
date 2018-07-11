@@ -5,6 +5,9 @@ PODS:
     - FirebaseAnalytics (= 5.0.1)
   - Firebase/CoreOnly (5.4.0):
     - FirebaseCore (= 5.0.5)
+  - Firebase/Database (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
   - FirebaseAnalytics (5.0.1):
     - FirebaseCore (~> 5.0)
     - FirebaseInstanceID (~> 3.0)
@@ -12,12 +15,16 @@ PODS:
     - nanopb (~> 0.3)
   - FirebaseCore (5.0.5):
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
   - FirebaseInstanceID (3.1.1):
     - FirebaseCore (~> 5.0)
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - LBTAComponents (1.0.2)
+  - leveldb-library (1.20)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
@@ -28,6 +35,7 @@ PODS:
 DEPENDENCIES:
   - CircleProgressView (from `https://github.com/CardinalNow/iOS-CircleProgressView.git`)
   - Firebase/Core
+  - Firebase/Database
   - LBTAComponents
   - RevealingSplashView
 
@@ -36,9 +44,11 @@ SPEC REPOS:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
+    - FirebaseDatabase
     - FirebaseInstanceID
     - GoogleToolboxForMac
     - LBTAComponents
+    - leveldb-library
     - nanopb
     - RevealingSplashView
 
@@ -56,12 +66,14 @@ SPEC CHECKSUMS:
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   LBTAComponents: c4c8863e0ef6715e378300db148b96a09df656f7
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
 
-PODFILE CHECKSUM: 8499f7574420cd843ff0174dc69d84af7690e26d
+PODFILE CHECKSUM: 3f7ad29b1848b0b569f9be61d3752d3ce2dd6e4e
 
 COCOAPODS: 1.5.2

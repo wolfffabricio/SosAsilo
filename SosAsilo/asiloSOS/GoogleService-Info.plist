@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>488274266372-5vhnmklp620u0mvjglbolrobblrftfnm.apps.googleusercontent.com</string>
+	<string>286881988333-kit5t5r7k1tv3r81ct3f7mjsjr6jhubp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.488274266372-5vhnmklp620u0mvjglbolrobblrftfnm</string>
+	<string>com.googleusercontent.apps.286881988333-kit5t5r7k1tv3r81ct3f7mjsjr6jhubp</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAYTZS9Crkfj2Rfxfew7IK6ViFZejaB3ME</string>
+	<string>AIzaSyCgXXsuPJrSuaIYvu62i4mHetqESvJWnwY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>488274266372</string>
+	<string>286881988333</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.sosasilo</string>
+	<string>com.victorimperico.asiloSOS</string>
 	<key>PROJECT_ID</key>
-	<string>sos-asilo</string>
+	<string>asilosos-b481f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>sos-asilo.appspot.com</string>
+	<string>asilosos-b481f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:488274266372:ios:fbc0239876997a02</string>
+	<string>1:286881988333:ios:090900d52cfa82e8</string>
 	<key>DATABASE_URL</key>
-	<string>https://sos-asilo.firebaseio.com</string>
+	<string>https://asilosos-b481f.firebaseio.com</string>
 </dict>
 </plist>
