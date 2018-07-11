@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import FirebaseDatabase
+import FirebaseAuth
 
 class CadastroViewController: UIViewController {
     
@@ -45,27 +46,31 @@ class CadastroViewController: UIViewController {
             exibeAlerta()
         }else{
             
-            let asilo = Asilos(context: AppDelegate.persistentContainer.viewContext)
-            asilo.nome = "12"
-            asilo.email = emailTextField.text
-            asilo.senha = senhaTextField.text
-            asilo.photo = "bg.jpg"
-            asilo.telefone = telefoneTextField.text
-            asilo.cnpj = cnpjTextField.text
-            asilo.site = "sitedoasilo"
-            asilo.endereco = enderecoTextField.text
-            asilo.sobre = "Sobre este asilo"
-            asilo.indAlimentacao = 0.0
-            asilo.indEntretenimento = 0.0
-            asilo.indHigiene = 0.0
-            asilo.indMedicamentos = 0.0
-            print("preenchido")
             
-            //AppDelegate.saveContext()
+            Auth.auth().createUser(withEmail: emailTextField.text!, password: senhaTextField.text!) { (user, error) in
+                if error == nil {
+                    let user = Auth.auth().currentUser
+                    let uid = user!.uid
+                    
+                    self.ref.child("asilos").child(uid).setValue([
+                      "nome": self.nomeTextField.text!,
+                      "photo": "bg",
+                      "telefone": self.telefoneTextField.text!,
+                      "cnpj": self.cnpjTextField.text!,
+                      "site": "",
+                      "endereco": self.enderecoTextField.text!,
+                      "sobre": "",
+                      "indAlimentos": 0.0,
+                      "indEntretenimento": 0.0,
+                      "indHigiene": 0.0,
+                      "indMedicamentos": 0.0])
+                }else{
+                    print(error!.localizedDescription.description)
+                }}
             
-            //self.ref.child("asilos").childByAutoId().setValue(["nome": nomeTextField.text!, "email": emailTextField.text!, "senha": senhaTextField.text!, "photo": "bg", "telefone": telefoneTextField.text!, "cnpj": cnpjTextField.text!, "site": "", "endereco": enderecoTextField.text!, "sobre": "", "indAlimentos": 0.0, "indEntretenimento": 0.0, "indHigiene": 0.0, "indMedicamentos": 0.0])
             
-            performSegue(withIdentifier: "mostraPerfil", sender: asilo)
+            
+            //performSegue(withIdentifier: "mostraPerfil", sender: asilo)
         }
     }
     
@@ -103,7 +108,6 @@ class CadastroViewController: UIViewController {
     
     override func viewDidLoad() {
         
-        
         self.navigationItem.title = "Cadastro"
         
         nomeTextField.layer.borderColor = UIColor.white.cgColor
@@ -133,7 +137,7 @@ class CadastroViewController: UIViewController {
         icoCadastro.layer.cornerRadius = icoCadastro.frame.width / 2
         //implementando db - Rodrigo Andreaza
         
-        AppDelegate.saveContext()
+        //AppDelegate.saveContext()
         
     }
     

@@ -26,6 +26,7 @@ class PerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        performSegue(withIdentifier: "mostraLogin", sender: txtSobre)
         
         ref.child("asilos").child("-LH8jpKW7aQaHN73QiF1").observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
