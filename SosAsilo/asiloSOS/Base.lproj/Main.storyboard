@@ -647,7 +647,6 @@ contato@santoantonio.com.br</string>
         <!--Navigation Controller-->
         <scene sceneID="EuT-0g-P7J">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbp-QB-5fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJu-ve-pNN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lni-w8-ZmA">
@@ -659,6 +658,7 @@ contato@santoantonio.com.br</string>
                         <segue destination="KmY-eB-9kQ" kind="relationship" relationship="rootViewController" id="QeH-hS-dfv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbp-QB-5fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4746" y="-537"/>
         </scene>
