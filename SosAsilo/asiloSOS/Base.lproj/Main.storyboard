@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t1V-JU-2aD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="asilosCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="asilosCell" rowHeight="219" id="L0D-BM-SyX" customClass="listaGeralCell" customModule="asiloSOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="asilosCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="asilosCell" rowHeight="219" id="L0D-BM-SyX" customClass="listaGeralCell" customModule="asiloSOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="219"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L0D-BM-SyX" id="hOC-3Y-xvn">
@@ -109,7 +109,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G6O-qr-0P8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV"/>
+                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-info-50" id="jlZ-dt-mz5">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="KmY-eB-9kQ" kind="show" id="8CM-xj-5vd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="iCy-R0-oxO" id="xRF-Hb-57F"/>
                         <outlet property="topBar" destination="hnj-d8-odV" id="akB-HI-yIZ"/>
@@ -450,7 +457,7 @@ contato@santoantonio.com.br</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCH-OQ-OJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5634.3999999999996" y="133.5832083958021"/>
+            <point key="canvasLocation" x="5780" y="629"/>
         </scene>
         <!--Home-->
         <scene sceneID="SzZ-4Z-bhO">
@@ -544,7 +551,7 @@ contato@santoantonio.com.br</string>
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="asilosCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="101" id="e8J-dh-PEX" customClass="ListaNotificationCell" customModule="asiloSOS" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="asilosCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="101" id="e8J-dh-PEX" customClass="ListaNotificationCell" customModule="asiloSOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e8J-dh-PEX" id="QbB-c2-5XM">
@@ -639,33 +646,20 @@ contato@santoantonio.com.br</string>
                         <viewLayoutGuide key="safeArea" id="34y-e1-gvi"/>
                     </view>
                     <navigationItem key="navigationItem" id="9ry-z7-P2G"/>
+                    <connections>
+                        <segue destination="4tB-99-bWd" kind="unwind" identifier="backToFirst" unwindAction="unwindToFirst:" id="tTA-bC-fgF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztm-LY-XqU" sceneMemberID="firstResponder"/>
+                <exit id="4tB-99-bWd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5634" y="-537"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="EuT-0g-P7J">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Bbp-QB-5fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EJu-ve-pNN" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lni-w8-ZmA">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="KmY-eB-9kQ" kind="relationship" relationship="rootViewController" id="QeH-hS-dfv"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="4746" y="-537"/>
+            <point key="canvasLocation" x="5830" y="-144"/>
         </scene>
     </scenes>
     <resources>
         <image name="bell" width="29" height="29"/>
         <image name="home" width="29" height="29"/>
+        <image name="icons8-info-50" width="25" height="25"/>
         <image name="seta" width="58" height="92"/>
     </resources>
 </document>
