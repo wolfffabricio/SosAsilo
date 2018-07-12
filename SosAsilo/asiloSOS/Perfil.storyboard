@@ -128,6 +128,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="141" id="a06-s6-Bm2"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
@@ -181,12 +182,6 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="sliderValue" destination="IP4-HM-iR0" id="8tR-93-jCP"/>
-                        <outlet property="txtSobre" destination="eth-qd-Huq" id="Znd-Vn-Dxo"/>
-                        <outlet property="txtelefone" destination="ak8-vV-mCT" id="cLn-m5-Pyj"/>
-                        <outlet property="txtemail" destination="9BF-Wu-q4r" id="mnF-wX-VwX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14y-E1-Hb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,9 +496,6 @@
                     <navigationItem key="navigationItem" title="Santo Ântonio dos Excepcionais" id="dSV-Ed-Ndh">
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="NSb-m8-csl">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="eAx-CV-fbI" kind="show" identifier="editPerfil" id="ZJn-GR-MjQ"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>

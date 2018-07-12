@@ -633,11 +633,11 @@ contato@santoantonio.com.br</string>
             <objects>
                 <viewController title="Asilo Santa Infernidade" id="4gy-gO-ofp" customClass="PerfilEditViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yI6-8s-e1F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8PA-2F-UGx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRW-ni-R3R">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="178"/>
@@ -654,7 +654,10 @@ contato@santoantonio.com.br</string>
                                                     <constraint firstAttribute="width" constant="61" id="6gw-0h-Yfh"/>
                                                     <constraint firstAttribute="height" constant="62" id="MDk-ez-u0a"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="OpenCamera1"/>
+                                                <state key="normal" image="Icon-App-76x76"/>
+                                                <connections>
+                                                    <action selector="btnGallery:" destination="4gy-gO-ofp" eventType="touchUpInside" id="qSB-H3-fZA"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -668,7 +671,7 @@ contato@santoantonio.com.br</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gm0-Ew-HOG">
-                                        <rect key="frame" x="8" y="188" width="359" height="127"/>
+                                        <rect key="frame" x="8" y="188" width="359" height="110"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-u5-66w">
                                                 <rect key="frame" x="8" y="8" width="343" height="29"/>
@@ -679,11 +682,11 @@ contato@santoantonio.com.br</string>
                                                     <segment title="Higiene"/>
                                                 </segments>
                                                 <connections>
-                                                    <action selector="valueChanged:" destination="4gy-gO-ofp" eventType="valueChanged" id="MwC-xR-7hv"/>
+                                                    <action selector="segValueChange:" destination="4gy-gO-ofp" eventType="valueChanged" id="bMm-Yw-FRB"/>
                                                 </connections>
                                             </segmentedControl>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ZKZ-VO-0Uj">
-                                                <rect key="frame" x="6" y="66" width="347" height="31"/>
+                                                <rect key="frame" x="6" y="56" width="347" height="31"/>
                                                 <color key="minimumTrackTintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="maximumTrackTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" red="0.1019607843" green="0.59607843140000005" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -693,15 +696,15 @@ contato@santoantonio.com.br</string>
                                         <constraints>
                                             <constraint firstItem="ZKZ-VO-0Uj" firstAttribute="leading" secondItem="gm0-Ew-HOG" secondAttribute="leading" constant="8" id="0hY-R7-m5T"/>
                                             <constraint firstAttribute="trailing" secondItem="cpL-u5-66w" secondAttribute="trailing" constant="8" id="OUC-Qj-Nej"/>
-                                            <constraint firstItem="ZKZ-VO-0Uj" firstAttribute="top" secondItem="cpL-u5-66w" secondAttribute="bottom" constant="30" id="R16-xb-5nf"/>
+                                            <constraint firstItem="ZKZ-VO-0Uj" firstAttribute="top" secondItem="cpL-u5-66w" secondAttribute="bottom" constant="20" id="R16-xb-5nf"/>
                                             <constraint firstItem="cpL-u5-66w" firstAttribute="leading" secondItem="gm0-Ew-HOG" secondAttribute="leading" constant="8" id="R7x-Wj-Njr"/>
                                             <constraint firstItem="cpL-u5-66w" firstAttribute="top" secondItem="gm0-Ew-HOG" secondAttribute="top" constant="8" id="jea-b7-xwr"/>
-                                            <constraint firstAttribute="height" constant="127" id="p2T-Tw-7So"/>
+                                            <constraint firstAttribute="height" constant="110" id="p2T-Tw-7So"/>
                                             <constraint firstAttribute="trailing" secondItem="ZKZ-VO-0Uj" secondAttribute="trailing" constant="8" id="vNU-yV-76j"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCy-gi-02T">
-                                        <rect key="frame" x="8" y="327" width="359" height="302"/>
+                                        <rect key="frame" x="8" y="307" width="359" height="302"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZq-19-mDs">
                                                 <rect key="frame" x="8" y="8" width="62" height="21"/>
@@ -713,42 +716,41 @@ contato@santoantonio.com.br</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(ddd) 3333-3333" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPX-ku-1sL">
-                                                <rect key="frame" x="82" y="223.5" width="136" height="30"/>
+                                                <rect key="frame" x="79" y="211.5" width="136" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlR-Ns-QiU">
-                                                <rect key="frame" x="4" y="195" width="347" height="21"/>
+                                                <rect key="frame" x="4" y="186" width="347" height="21"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1z-MI-GHY">
-                                                <rect key="frame" x="4" y="228" width="70" height="21"/>
+                                                <rect key="frame" x="4" y="216" width="70" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCv-9U-6ul">
-                                                <rect key="frame" x="4" y="261" width="53.5" height="21"/>
+                                                <rect key="frame" x="4" y="248" width="53.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9x-V4-SZN">
-                                                <rect key="frame" x="82" y="256.5" width="136" height="30"/>
+                                                <rect key="frame" x="79" y="243.5" width="136" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AOe-6L-Fhd">
-                                                <rect key="frame" x="4" y="39" width="347" height="141"/>
+                                                <rect key="frame" x="4" y="37" width="347" height="141"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="141" id="oPc-YR-KNw"/>
                                                 </constraints>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -756,24 +758,25 @@ contato@santoantonio.com.br</string>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="hCv-9U-6ul" firstAttribute="leading" secondItem="z1z-MI-GHY" secondAttribute="leading" id="2K1-Lr-pcl"/>
-                                            <constraint firstItem="z1z-MI-GHY" firstAttribute="top" secondItem="DlR-Ns-QiU" secondAttribute="bottom" constant="12" id="7RD-Pu-GjX"/>
-                                            <constraint firstItem="b9x-V4-SZN" firstAttribute="leading" secondItem="hPX-ku-1sL" secondAttribute="leading" id="7X0-dv-B4t"/>
+                                            <constraint firstItem="z1z-MI-GHY" firstAttribute="top" secondItem="DlR-Ns-QiU" secondAttribute="bottom" constant="9" id="7RD-Pu-GjX"/>
                                             <constraint firstItem="hPX-ku-1sL" firstAttribute="centerY" secondItem="z1z-MI-GHY" secondAttribute="centerY" id="9Zv-ur-d3g"/>
                                             <constraint firstItem="DlR-Ns-QiU" firstAttribute="centerX" secondItem="AOe-6L-Fhd" secondAttribute="centerX" id="D4T-ak-TsA"/>
                                             <constraint firstItem="hCv-9U-6ul" firstAttribute="leading" secondItem="DlR-Ns-QiU" secondAttribute="leading" id="Kib-0P-plt"/>
-                                            <constraint firstItem="hCv-9U-6ul" firstAttribute="top" secondItem="z1z-MI-GHY" secondAttribute="bottom" constant="12" id="LV2-8o-EpE"/>
+                                            <constraint firstItem="hCv-9U-6ul" firstAttribute="top" secondItem="z1z-MI-GHY" secondAttribute="bottom" constant="11" id="LV2-8o-EpE"/>
+                                            <constraint firstItem="b9x-V4-SZN" firstAttribute="top" secondItem="hPX-ku-1sL" secondAttribute="bottom" constant="2" id="OdR-9P-xW3"/>
                                             <constraint firstItem="BZq-19-mDs" firstAttribute="top" secondItem="dCy-gi-02T" secondAttribute="top" constant="8" id="P6T-Ye-c47"/>
                                             <constraint firstItem="DlR-Ns-QiU" firstAttribute="leading" secondItem="AOe-6L-Fhd" secondAttribute="leading" id="P8k-gr-Onh"/>
+                                            <constraint firstItem="b9x-V4-SZN" firstAttribute="centerY" secondItem="hCv-9U-6ul" secondAttribute="centerY" id="QGJ-0M-ghT"/>
                                             <constraint firstItem="z1z-MI-GHY" firstAttribute="leading" secondItem="DlR-Ns-QiU" secondAttribute="leading" id="RCa-TG-0V7"/>
-                                            <constraint firstItem="b9x-V4-SZN" firstAttribute="centerY" secondItem="hCv-9U-6ul" secondAttribute="centerY" id="RIg-jQ-jnY"/>
                                             <constraint firstItem="hCv-9U-6ul" firstAttribute="leading" secondItem="z1z-MI-GHY" secondAttribute="leading" id="Sag-Jg-u0s"/>
-                                            <constraint firstItem="hPX-ku-1sL" firstAttribute="leading" secondItem="z1z-MI-GHY" secondAttribute="trailing" constant="8" id="VO6-gm-rAu"/>
+                                            <constraint firstItem="hPX-ku-1sL" firstAttribute="leading" secondItem="z1z-MI-GHY" secondAttribute="trailing" constant="5" id="VO6-gm-rAu"/>
                                             <constraint firstAttribute="width" secondItem="dCy-gi-02T" secondAttribute="height" multiplier="398:335" id="Yf7-8r-mCV"/>
+                                            <constraint firstItem="b9x-V4-SZN" firstAttribute="leading" secondItem="hPX-ku-1sL" secondAttribute="leading" id="gwe-Bo-hJQ"/>
                                             <constraint firstItem="b9x-V4-SZN" firstAttribute="trailing" secondItem="hPX-ku-1sL" secondAttribute="trailing" id="hhd-az-1cR"/>
                                             <constraint firstAttribute="trailing" secondItem="AOe-6L-Fhd" secondAttribute="trailing" constant="8" id="ixS-9E-k9d"/>
                                             <constraint firstItem="BZq-19-mDs" firstAttribute="leading" secondItem="dCy-gi-02T" secondAttribute="leading" constant="8" id="l3y-7b-pRH"/>
-                                            <constraint firstItem="AOe-6L-Fhd" firstAttribute="top" secondItem="BZq-19-mDs" secondAttribute="bottom" constant="10" id="lHq-Ml-cOx"/>
-                                            <constraint firstItem="DlR-Ns-QiU" firstAttribute="top" secondItem="AOe-6L-Fhd" secondAttribute="bottom" constant="15" id="oJe-rE-BC5"/>
+                                            <constraint firstItem="AOe-6L-Fhd" firstAttribute="top" secondItem="BZq-19-mDs" secondAttribute="bottom" constant="8" id="lHq-Ml-cOx"/>
+                                            <constraint firstItem="DlR-Ns-QiU" firstAttribute="top" secondItem="AOe-6L-Fhd" secondAttribute="bottom" constant="8" id="oJe-rE-BC5"/>
                                             <constraint firstItem="AOe-6L-Fhd" firstAttribute="leading" secondItem="dCy-gi-02T" secondAttribute="leading" constant="4" id="zb9-Jq-Xet"/>
                                         </constraints>
                                     </view>
@@ -783,7 +786,7 @@ contato@santoantonio.com.br</string>
                                     <constraint firstItem="yRW-ni-R3R" firstAttribute="leading" secondItem="8PA-2F-UGx" secondAttribute="leading" id="647-X1-NiV"/>
                                     <constraint firstItem="yRW-ni-R3R" firstAttribute="top" secondItem="8PA-2F-UGx" secondAttribute="top" id="7jP-hg-6Gv"/>
                                     <constraint firstItem="gm0-Ew-HOG" firstAttribute="top" secondItem="yRW-ni-R3R" secondAttribute="bottom" constant="10" id="9WN-Hy-6Iv"/>
-                                    <constraint firstItem="dCy-gi-02T" firstAttribute="top" secondItem="gm0-Ew-HOG" secondAttribute="bottom" constant="12" id="Aze-EM-Hma"/>
+                                    <constraint firstItem="dCy-gi-02T" firstAttribute="top" secondItem="gm0-Ew-HOG" secondAttribute="bottom" constant="9" id="Aze-EM-Hma"/>
                                     <constraint firstAttribute="trailing" secondItem="gm0-Ew-HOG" secondAttribute="trailing" constant="8" id="Mn4-PB-gAy"/>
                                     <constraint firstItem="gm0-Ew-HOG" firstAttribute="leading" secondItem="8PA-2F-UGx" secondAttribute="leading" constant="8" id="Pf3-hS-8oh"/>
                                     <constraint firstItem="dCy-gi-02T" firstAttribute="leading" secondItem="8PA-2F-UGx" secondAttribute="leading" constant="8" id="gxw-m5-1QU"/>
@@ -801,12 +804,28 @@ contato@santoantonio.com.br</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bW6-rd-nEE"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationItem key="navigationItem" title="Asilo Santa Infernidade" id="UMq-X2-ljx">
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" id="QZG-ww-isf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnSalvar:" destination="4gy-gO-ofp" id="uHI-HZ-eR6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imgPhoto" destination="zwc-Lu-Hcq" id="iuz-El-d5c"/>
+                        <outlet property="slider" destination="ZKZ-VO-0Uj" id="JiV-VQ-WDT"/>
+                        <outlet property="sliderValue" destination="ZKZ-VO-0Uj" id="YLv-Bf-u3b"/>
+                        <outlet property="txtSobre" destination="AOe-6L-Fhd" id="uJR-bT-fD9"/>
+                        <outlet property="txtelefone" destination="hPX-ku-1sL" id="PHL-aH-aZp"/>
+                        <outlet property="txtemail" destination="b9x-V4-SZN" id="MqM-Wm-dlB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHv-XO-7il" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5353" y="1077"/>
+            <point key="canvasLocation" x="5352.8000000000002" y="1076.311844077961"/>
         </scene>
         <!--Santo Antonio dos Excepcionais-->
         <scene sceneID="Qbf-ze-GzW">
@@ -1170,7 +1189,7 @@ contato@santoantonio.com.br</string>
         </scene>
     </scenes>
     <resources>
-        <image name="OpenCamera1" width="16" height="16"/>
+        <image name="Icon-App-76x76" width="38" height="38"/>
         <image name="angular" width="300" height="299"/>
         <image name="bell" width="29" height="29"/>
         <image name="bg" width="1170" height="620"/>
