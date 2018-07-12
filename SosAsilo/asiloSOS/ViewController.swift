@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import FirebaseDatabase
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UNUserNotificationCenterDelegate {
     
@@ -16,7 +17,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topBar: UINavigationItem!
     
-    let model = AsiloModel.shared
+    var asilos = [Asilo]()
+    let ref = Database.database().reference()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tableView.dataSource = self
         tableView.delegate = self
+        getAsilos()
         //        UIApplication.shared.applicationIconBadgeNumber = 0
         
         
@@ -77,28 +81,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return model.data.count
+        return asilos.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "asilosCell") as! listaGeralCell
         
         
-        let asilo = model.data[indexPath.row]
+        let dados = asilos[indexPath.row]
         
         cell.view.layer.cornerRadius = 4
         
-        cell.labelNome.text = asilo.nome
-        cell.labelEndereco.text = asilo.endereco
-        cell.photoAsilo.image = UIImage(named: "\(asilo.photo)")
+        cell.labelNome.text = dados.nome
+        cell.labelEndereco.text = dados.endereco
+        cell.photoAsilo.image = UIImage(named: "\(dados.photo)")
         
         
         return cell
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let asilo = model.data[indexPath.row]
+        let dados = asilos[indexPath.row]
         
-        performSegue(withIdentifier: "mostraDetalhes", sender: asilo)
+        performSegue(withIdentifier: "mostraDetalhes", sender: dados)
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? SecondViewController, segue.identifier == "mostraDetalhes"{
@@ -107,7 +111,42 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         }
     }
     
+    func getAsilos() {
+        
+        ref.child("asilos").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            for snap in snapshot.children {
+                
+                let userSnap = snap as! DataSnapshot
+                let uid = userSnap.key
+                let userDict = userSnap.value as! [String:AnyObject]
+                let nome = userDict["nome"] as! String
+                let email = userDict["email"] as! String
+                let cnpj = userDict["cnpj"] as! String
+                let endereco = userDict["endereco"] as! String
+                let indAlimentos = userDict["indAlimentos"] as! Double
+                let indEntretenimento = userDict["indEntretenimento"] as! Double
+                let indHigiene = userDict["indHigiene"] as! Double
+                let indMedicamentos = userDict["indMedicamentos"] as! Double
+                let photo = userDict["photo"] as! String
+                let site = userDict["site"] as! String
+                let sobre = userDict["sobre"] as! String
+                let telefone = userDict["telefone"] as! String
+                
+                let asiloGet = Asilo(id: uid,nome: nome,email: email, photo: photo, telefone: telefone,cnpj: cnpj ,site: site,endereco: endereco,sobre: sobre,indAlimentacao: indAlimentos,indEntretenimento: indEntretenimento,indHigiene: indHigiene,indMedicamentos: indMedicamentos)
+                self.asilos.append(asiloGet)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+                
+           
+            }
+        })
+        
+        
+        
     
+    }
     
     
 }

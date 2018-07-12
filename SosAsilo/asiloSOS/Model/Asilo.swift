@@ -4,7 +4,6 @@ struct Asilo {
     let id: String
     let nome: String
     let email: String
-    let senha: String
     let photo: String
     let telefone: String
     let cnpj: String
@@ -16,4 +15,5 @@ struct Asilo {
     let indEntretenimento: Double
     let indHigiene: Double
     let indMedicamentos: Double
+    
 }
