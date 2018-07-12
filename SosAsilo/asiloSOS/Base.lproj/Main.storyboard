@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -129,7 +128,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d68-79-kIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4875" y="1527"/>
+            <point key="canvasLocation" x="4874" y="1534"/>
         </scene>
         <!--Santo Antonio dos Excepcionais-->
         <scene sceneID="P9Z-qC-yHk">
@@ -632,7 +631,7 @@ contato@santoantonio.com.br</string>
         <!--Asilo Santa Infernidade-->
         <scene sceneID="34S-g2-eqc">
             <objects>
-                <viewController title="Asilo Santa Infernidade" id="4gy-gO-ofp" customClass="PerfilViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Asilo Santa Infernidade" id="4gy-gO-ofp" customClass="PerfilEditViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yI6-8s-e1F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -804,14 +803,10 @@ contato@santoantonio.com.br</string>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="segControl" destination="cpL-u5-66w" id="xR1-nw-xlj"/>
-                        <outlet property="valueAlimentos" destination="ZKZ-VO-0Uj" id="CVp-qd-863"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHv-XO-7il" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5352.8000000000002" y="1068.215892053973"/>
+            <point key="canvasLocation" x="5353" y="1077"/>
         </scene>
         <!--Santo Antonio dos Excepcionais-->
         <scene sceneID="Qbf-ze-GzW">
@@ -1171,7 +1166,7 @@ contato@santoantonio.com.br</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j4-ZY-eb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3612" y="1068.215892053973"/>
+            <point key="canvasLocation" x="3609" y="1077"/>
         </scene>
     </scenes>
     <resources>

@@ -11,6 +11,7 @@
 		450A658A20ED083100AC6AF8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658920ED083100AC6AF8 /* NotificationViewController.swift */; };
 		450A658C20ED0F7300AC6AF8 /* ListaNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */; };
 		450A659020ED160400AC6AF8 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450A658F20ED160400AC6AF8 /* NotificationModel.swift */; };
+		4557164C20F7A8C500D03DAE /* PerfilEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4557164B20F7A8C500D03DAE /* PerfilEditViewController.swift */; };
 		45A400FF20E6982900122F89 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A400FE20E6982900122F89 /* Login.storyboard */; };
 		45A4010120E69BA400122F89 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010020E69BA400122F89 /* LoginViewController.swift */; };
 		45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A4010220E6AD0100122F89 /* CadastroViewController.swift */; };
@@ -28,7 +29,6 @@
 		A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */; };
 		A753B0BC20EF981A004C2A94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753B0BB20EF981A004C2A94 /* Notifications.swift */; };
 		A753B0BE20F39605004C2A94 /* CircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753B0BD20F39604004C2A94 /* CircleProgressView.swift */; };
-		A78ABF1E20F6433400C6E2ED /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78ABF1D20F6433400C6E2ED /* Perfil.storyboard */; };
 		A78ABF2020F6504800C6E2ED /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78ABF1F20F6504800C6E2ED /* PerfilViewController.swift */; };
 		A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */; };
 		A7C2F69D20E6718600D9F216 /* AsiloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C2F69C20E6718600D9F216 /* AsiloModel.swift */; };
@@ -44,6 +44,7 @@
 		450A658920ED083100AC6AF8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		450A658B20ED0F7300AC6AF8 /* ListaNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaNotificationCell.swift; sourceTree = "<group>"; };
 		450A658F20ED160400AC6AF8 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		4557164B20F7A8C500D03DAE /* PerfilEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilEditViewController.swift; sourceTree = "<group>"; };
 		45A400FE20E6982900122F89 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		45A4010020E69BA400122F89 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		45A4010220E6AD0100122F89 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		A2D4AE8620E6816D00752598 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A753B0BB20EF981A004C2A94 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		A753B0BD20F39604004C2A94 /* CircleProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleProgressView.swift; sourceTree = "<group>"; };
-		A78ABF1D20F6433400C6E2ED /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
 		A78ABF1F20F6504800C6E2ED /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerCustom.swift; sourceTree = "<group>"; };
 		A7C2F69C20E6718600D9F216 /* AsiloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsiloModel.swift; sourceTree = "<group>"; };
@@ -127,7 +127,6 @@
 			children = (
 				A289549C20E5031C000F39AE /* Main.storyboard */,
 				45A400FE20E6982900122F89 /* Login.storyboard */,
-				A78ABF1D20F6433400C6E2ED /* Perfil.storyboard */,
 				450A658720ED07FF00AC6AF8 /* Notification.storyboard */,
 				A7C2F69A20E65A3900D9F216 /* UINavigationControllerCustom.swift */,
 				A28954B120E50ECC000F39AE /* Model */,
@@ -136,6 +135,7 @@
 				450A658920ED083100AC6AF8 /* NotificationViewController.swift */,
 				A28954B820E51E5A000F39AE /* SecondViewController.swift */,
 				A78ABF1F20F6504800C6E2ED /* PerfilViewController.swift */,
+				4557164B20F7A8C500D03DAE /* PerfilEditViewController.swift */,
 				45A4010020E69BA400122F89 /* LoginViewController.swift */,
 				A7DA1B2E20F4ED29007C594D /* FirstViewController.swift */,
 				A753B0BD20F39604004C2A94 /* CircleProgressView.swift */,
@@ -230,7 +230,6 @@
 				A7E369F920EB9C550061E6B0 /* Main.storyboard in Resources */,
 				A2D4AE8720E6816D00752598 /* GoogleService-Info.plist in Resources */,
 				A28954A320E5031D000F39AE /* Assets.xcassets in Resources */,
-				A78ABF1E20F6433400C6E2ED /* Perfil.storyboard in Resources */,
 				45A400FF20E6982900122F89 /* Login.storyboard in Resources */,
 				450A658820ED07FF00AC6AF8 /* Notification.storyboard in Resources */,
 			);
@@ -304,6 +303,7 @@
 				45A4010320E6AD0100122F89 /* CadastroViewController.swift in Sources */,
 				A289549B20E5031C000F39AE /* ViewController.swift in Sources */,
 				A7C2F69B20E65A3900D9F216 /* UINavigationControllerCustom.swift in Sources */,
+				4557164C20F7A8C500D03DAE /* PerfilEditViewController.swift in Sources */,
 				A289549920E5031C000F39AE /* AppDelegate.swift in Sources */,
 				A28954AE20E50436000F39AE /* listaGeralCell.swift in Sources */,
 				A78ABF2020F6504800C6E2ED /* PerfilViewController.swift in Sources */,

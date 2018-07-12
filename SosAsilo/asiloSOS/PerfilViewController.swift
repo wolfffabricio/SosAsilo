@@ -55,6 +55,7 @@ class PerfilViewController: UIViewController {
             self.indMedicamentos.setProgress(indMedicamentosFB, animated: true)
             self.indHigiene.setProgress(indHigieneFB, animated: true)
             
+            
             self.labelAlimentacao.text = String(Int(indAlimentosFB * 100))+"%"
             self.labelEntretenimento.text = String(Int(indEntretenimentoFB * 100))+"%"
             self.labelHigiene.text = String(Int(indHigieneFB * 100))+"%"
@@ -86,21 +87,4 @@ class PerfilViewController: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
