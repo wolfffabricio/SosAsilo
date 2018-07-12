@@ -77,6 +77,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated:true)
         
         self.emailTextField.delegate = self
         self.senhaTextField.delegate = self

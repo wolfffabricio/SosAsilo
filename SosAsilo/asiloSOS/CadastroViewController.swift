@@ -61,6 +61,7 @@ class CadastroViewController: UIViewController {
                       "nome": self.nomeTextField.text!,
                       "photo": "bg",
                       "telefone": self.telefoneTextField.text!,
+                      "email": self.emailTextField.text!,
                       "cnpj": self.cnpjTextField.text!,
                       "site": "",
                       "endereco": self.enderecoTextField.text!,

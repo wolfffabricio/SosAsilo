@@ -14,6 +14,16 @@ class PerfilViewController: UIViewController {
     let ref = Database.database().reference()
     
 
+    @IBAction func logout(_ sender: UIBarButtonItem) {
+        
+        let firebaseAuth = Auth.auth()
+                do {
+                    try firebaseAuth.signOut()
+                    performSegue(withIdentifier: "mostraLogin", sender: self)
+                } catch let signOutError as NSError {
+                    print ("Error signing out: %@", signOutError)
+                }
+    }
     @IBOutlet weak var labelAlimentacao: UILabel!
     @IBOutlet weak var labelEntretenimento: UILabel!
     @IBOutlet weak var labelMedicamentos: UILabel!
@@ -70,6 +80,11 @@ class PerfilViewController: UIViewController {
         }
 
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let backItem = UIBarButtonItem()
+        backItem.title = "Cancelar"
+        navigationItem.backBarButtonItem = backItem
     }
     override func viewWillAppear(_ animated: Bool) {
         if Auth.auth().currentUser != nil {

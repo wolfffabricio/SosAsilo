@@ -56,6 +56,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.sendNotification()
         })
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //getAsilos()
+    }
     
     func sendNotification() {
         
@@ -112,8 +116,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func getAsilos() {
+        asilos.removeAll()
         
-        ref.child("asilos").observeSingleEvent(of: .value, with: { (snapshot) in
+        ref.child("asilos").queryOrderedByKey().observeSingleEvent(of: .value, with: { (snapshot) in
             
             for snap in snapshot.children {
                 

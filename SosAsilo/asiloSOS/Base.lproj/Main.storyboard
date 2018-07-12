@@ -120,16 +120,6 @@
             </objects>
             <point key="canvasLocation" x="4746.3999999999996" y="133.5832083958021"/>
         </scene>
-        <!--telaLogin-->
-        <scene sceneID="EUr-gz-x8f">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="telaLogin" id="Dmf-i5-cgU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="dgw-TH-Mow"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d68-79-kIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4874" y="1534"/>
-        </scene>
         <!--Santo Antonio dos Excepcionais-->
         <scene sceneID="P9Z-qC-yHk">
             <objects>
@@ -157,7 +147,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-XP-YW4">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AD-XP-YW4">
                                                                 <rect key="frame" x="8" y="26" width="54" height="18"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
@@ -168,7 +158,7 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                                                <real key="value" value="0.29999999999999999"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
                                                                 <real key="value" value="2"/>
@@ -185,7 +175,7 @@
                                                                 <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
-                                                                <real key="value" value="0.29999999999999999"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="angular"/>
                                                         </userDefinedRuntimeAttributes>
@@ -221,7 +211,7 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                                                <real key="value" value="0.80000000000000004"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
                                                                 <real key="value" value="2"/>
@@ -238,7 +228,7 @@
                                                                 <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
-                                                                <real key="value" value="0.29999999999999999"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="angular"/>
                                                         </userDefinedRuntimeAttributes>
@@ -274,7 +264,7 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                                                <real key="value" value="0.59999999999999998"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
                                                                 <real key="value" value="2"/>
@@ -291,7 +281,7 @@
                                                                 <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
-                                                                <real key="value" value="0.29999999999999999"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="angular"/>
                                                         </userDefinedRuntimeAttributes>
@@ -327,7 +317,7 @@
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="progress">
-                                                                <real key="value" value="0.10000000000000001"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
                                                                 <real key="value" value="2"/>
@@ -344,7 +334,7 @@
                                                                 <color key="value" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
-                                                                <real key="value" value="0.29999999999999999"/>
+                                                                <real key="value" value="0.0"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="image" keyPath="trackImage" value="angular"/>
                                                         </userDefinedRuntimeAttributes>
@@ -446,8 +436,17 @@ contato@santoantonio.com.br</string>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="circleAlimentos" destination="oj8-iI-7Vr" id="of2-Op-Rgx"/>
+                        <outlet property="circleEntretenimento" destination="XKK-dh-1cB" id="siT-Xw-dBV"/>
+                        <outlet property="circleHigiene" destination="Kbg-Xp-RKL" id="feC-PC-utE"/>
+                        <outlet property="circleMedicamentos" destination="b5J-hK-IKX" id="o92-BB-fDa"/>
+                        <outlet property="labelAlimentacao" destination="9AD-XP-YW4" id="eLD-CX-fYr"/>
+                        <outlet property="labelEntretenimento" destination="Qjd-pl-FER" id="yHz-JX-yGB"/>
+                        <outlet property="labelHigiene" destination="UhA-B3-GS6" id="5yi-b3-DeD"/>
+                        <outlet property="labelMedicamentos" destination="PSF-xC-WQC" id="k5g-15-avn"/>
                         <outlet property="loaderAlimentos" destination="XKK-dh-1cB" id="e1v-zh-FOT"/>
                         <outlet property="photoAsilo" destination="PVB-Yf-1eb" id="fUp-cX-2Dg"/>
+                        <outlet property="txtSobre" destination="UDQ-UC-6wf" id="op9-5m-yRm"/>
                         <outlet property="viewCircles" destination="ZXG-IU-hQ8" id="tKe-D1-n8r"/>
                         <outlet property="viewInfo" destination="XQM-7d-6RU" id="aok-0p-vD9"/>
                     </connections>
@@ -528,7 +527,7 @@ contato@santoantonio.com.br</string>
                     </tabBar>
                     <connections>
                         <segue destination="ayc-p5-4tO" kind="relationship" relationship="viewControllers" id="mOk-FZ-bOu"/>
-                        <segue destination="vDf-C5-CpM" kind="relationship" relationship="viewControllers" id="l3k-4O-3dM"/>
+                        <segue destination="6B3-7B-pFd" kind="relationship" relationship="viewControllers" id="l3k-4O-3dM"/>
                         <segue destination="N51-Y1-iyA" kind="relationship" relationship="viewControllers" id="VPH-CA-bIa"/>
                     </connections>
                 </tabBarController>
@@ -539,13 +538,13 @@ contato@santoantonio.com.br</string>
         <!--Notificações-->
         <scene sceneID="gsi-EL-EUf">
             <objects>
-                <viewController id="vDf-C5-CpM" customClass="NotificationViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Notificações" id="vDf-C5-CpM" customClass="NotificationViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIj-NI-99N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-6o-6EE">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="asilosCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="101" id="e8J-dh-PEX" customClass="ListaNotificationCell" customModule="asiloSOS" customModuleProvider="target">
@@ -619,14 +618,14 @@ contato@santoantonio.com.br</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IXU-tq-Nz5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Notificações" image="bell" id="l1z-gz-Xcf"/>
+                    <navigationItem key="navigationItem" title="Notificações" id="0OI-UP-Pan"/>
                     <connections>
                         <outlet property="tableView" destination="BTq-6o-6EE" id="Hkc-dw-rHJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sb-Kd-qTE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="1068"/>
+            <point key="canvasLocation" x="2440.8000000000002" y="1075.4122938530736"/>
         </scene>
         <!--Asilo Santa Infernidade-->
         <scene sceneID="34S-g2-eqc">
@@ -690,6 +689,9 @@ contato@santoantonio.com.br</string>
                                                 <color key="minimumTrackTintColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="maximumTrackTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="thumbTintColor" red="0.1019607843" green="0.59607843140000005" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="updateSliderInFB:" destination="4gy-gO-ofp" eventType="valueChanged" id="KuT-3A-XGr"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -804,7 +806,8 @@ contato@santoantonio.com.br</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bW6-rd-nEE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Asilo Santa Infernidade" id="UMq-X2-ljx">
+                    <navigationItem key="navigationItem" title="Editar Perfil" id="UMq-X2-ljx">
+                        <barButtonItem key="backBarButtonItem" title="Cancelar" id="eYy-ab-fw1"/>
                         <barButtonItem key="rightBarButtonItem" title="Salvar" id="QZG-ww-isf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -816,6 +819,7 @@ contato@santoantonio.com.br</string>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imgPhoto" destination="zwc-Lu-Hcq" id="iuz-El-d5c"/>
+                        <outlet property="segControl" destination="cpL-u5-66w" id="d9S-gK-HAq"/>
                         <outlet property="slider" destination="ZKZ-VO-0Uj" id="JiV-VQ-WDT"/>
                         <outlet property="sliderValue" destination="ZKZ-VO-0Uj" id="YLv-Bf-u3b"/>
                         <outlet property="txtSobre" destination="AOe-6L-Fhd" id="uJR-bT-fD9"/>
@@ -825,7 +829,7 @@ contato@santoantonio.com.br</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHv-XO-7il" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5352.8000000000002" y="1076.311844077961"/>
+            <point key="canvasLocation" x="5692" y="1076.311844077961"/>
         </scene>
         <!--Santo Antonio dos Excepcionais-->
         <scene sceneID="Qbf-ze-GzW">
@@ -1153,12 +1157,12 @@ contato@santoantonio.com.br</string>
                         <outlet property="photo" destination="T3S-1w-S1k" id="PRQ-oP-GuK"/>
                         <outlet property="txtContato" destination="7xH-0a-DJG" id="DjF-cj-zvi"/>
                         <outlet property="txtSobre" destination="ytr-b0-heK" id="zQa-40-h96"/>
-                        <segue destination="Dmf-i5-cgU" kind="show" identifier="mostraLogin" id="ImC-kP-6Pm"/>
+                        <segue destination="1Rw-C2-vp7" kind="show" identifier="mostraLogin" id="fHA-Sc-aC8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvU-aS-ebU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4550" y="1078"/>
+            <point key="canvasLocation" x="4888.8000000000002" y="1077.2113943028487"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="U51-Le-V1c">
@@ -1171,6 +1175,9 @@ contato@santoantonio.com.br</string>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1185,7 +1192,311 @@ contato@santoantonio.com.br</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1j4-ZY-eb4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3609" y="1077"/>
+            <point key="canvasLocation" x="3948" y="1076.311844077961"/>
+        </scene>
+        <!--Notificações-->
+        <scene sceneID="tIK-cp-D8c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6B3-7B-pFd" customClass="UINavigationControllerCustom" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notificações" image="bell" id="l1z-gz-Xcf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PXw-kG-jDt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="barTintColor">
+                            <color key="value" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="vDf-C5-CpM" kind="relationship" relationship="rootViewController" id="1Vg-nI-uq7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78V-HV-aAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1572" y="1075"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="UZb-Q5-Xix">
+            <objects>
+                <viewController id="1Rw-C2-vp7" customClass="LoginViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vnj-r9-mva">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBx-xg-A7d">
+                                <rect key="frame" x="24.5" y="137" width="326" height="295"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WJH-SQ-ggr">
+                                        <rect key="frame" x="30" y="162" width="266" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL0-eT-29w">
+                                        <rect key="frame" x="30" y="232" width="266" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Entrar">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btEntrar:" destination="1Rw-C2-vp7" eventType="touchUpInside" id="wnV-WT-Typ"/>
+                                            <action selector="btnLogin:" destination="1Rw-C2-vp7" eventType="touchUpInside" id="Qjv-7J-P9D"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="Vz8-s6-Aze">
+                                        <rect key="frame" x="109" y="-52" width="107" height="104"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="104" id="Pj1-zg-yzm"/>
+                                            <constraint firstAttribute="width" constant="107" id="aEh-04-lYd"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-Ec-Eid">
+                                        <rect key="frame" x="30" y="112" width="266" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WJH-SQ-ggr" firstAttribute="top" secondItem="CsV-Ec-Eid" secondAttribute="bottom" constant="20" id="4pW-7D-p3e"/>
+                                    <constraint firstAttribute="height" constant="295" id="9XO-pA-gZe"/>
+                                    <constraint firstItem="Vz8-s6-Aze" firstAttribute="top" secondItem="gBx-xg-A7d" secondAttribute="top" constant="-52" id="A3Y-Dc-pSo"/>
+                                    <constraint firstItem="CsV-Ec-Eid" firstAttribute="leading" secondItem="gBx-xg-A7d" secondAttribute="leading" constant="30" id="AL7-2t-mdC"/>
+                                    <constraint firstItem="WJH-SQ-ggr" firstAttribute="leading" secondItem="gBx-xg-A7d" secondAttribute="leading" constant="30" id="BlT-IF-NuT"/>
+                                    <constraint firstAttribute="trailing" secondItem="HL0-eT-29w" secondAttribute="trailing" constant="30" id="Cab-HJ-TDc"/>
+                                    <constraint firstItem="HL0-eT-29w" firstAttribute="leading" secondItem="gBx-xg-A7d" secondAttribute="leading" constant="30" id="JbW-Gt-gGC"/>
+                                    <constraint firstItem="HL0-eT-29w" firstAttribute="top" secondItem="WJH-SQ-ggr" secondAttribute="bottom" constant="40" id="NoX-e4-izA"/>
+                                    <constraint firstAttribute="trailing" secondItem="CsV-Ec-Eid" secondAttribute="trailing" constant="30" id="U5T-0c-tT8"/>
+                                    <constraint firstAttribute="trailing" secondItem="WJH-SQ-ggr" secondAttribute="trailing" constant="30" id="ZCe-yj-Fkl"/>
+                                    <constraint firstItem="Vz8-s6-Aze" firstAttribute="centerX" secondItem="CsV-Ec-Eid" secondAttribute="centerX" id="txz-Cg-gtz"/>
+                                    <constraint firstAttribute="width" constant="326" id="u4L-Jo-RzQ"/>
+                                    <constraint firstItem="CsV-Ec-Eid" firstAttribute="top" secondItem="Vz8-s6-Aze" secondAttribute="bottom" constant="60" id="yRx-xi-q3C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="view.layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSc-Pa-zfB">
+                                <rect key="frame" x="10" y="453" width="355" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Não tem uma conta? Registre-se">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btRegistrar:" destination="1Rw-C2-vp7" eventType="touchUpInside" id="7B2-C0-UnJ"/>
+                                    <segue destination="Lx0-ha-Krc" kind="show" identifier="cadastroSegue" id="Acv-C0-lsq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5rt-V3-5eG" firstAttribute="trailing" secondItem="MSc-Pa-zfB" secondAttribute="trailing" constant="10" id="C8a-R4-Mzk"/>
+                            <constraint firstItem="MSc-Pa-zfB" firstAttribute="top" secondItem="gBx-xg-A7d" secondAttribute="bottom" constant="21" id="W4o-fm-ZTS"/>
+                            <constraint firstItem="gBx-xg-A7d" firstAttribute="centerX" secondItem="Vnj-r9-mva" secondAttribute="centerX" id="j8X-Z9-ILQ"/>
+                            <constraint firstItem="gBx-xg-A7d" firstAttribute="centerY" secondItem="Vnj-r9-mva" secondAttribute="centerY" constant="-17" id="oZd-9B-KS5"/>
+                            <constraint firstItem="MSc-Pa-zfB" firstAttribute="leading" secondItem="5rt-V3-5eG" secondAttribute="leading" constant="10" id="uqk-qn-tuN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5rt-V3-5eG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="profile" id="VpL-te-cTa"/>
+                    <navigationItem key="navigationItem" id="51t-S0-Q9B"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btEntrar" destination="HL0-eT-29w" id="YOF-GI-7cR"/>
+                        <outlet property="emailTextField" destination="CsV-Ec-Eid" id="7mY-FE-a62"/>
+                        <outlet property="iconLogin" destination="Vz8-s6-Aze" id="OtI-8O-E3n"/>
+                        <outlet property="senhaTextField" destination="WJH-SQ-ggr" id="bxv-lr-wbJ"/>
+                        <outlet property="viewLogin" destination="gBx-xg-A7d" id="bV0-hN-JH2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4d-SX-Oa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4889" y="2052"/>
+        </scene>
+        <!--Cadastro View Controller-->
+        <scene sceneID="cUv-tZ-ecA">
+            <objects>
+                <viewController id="Lx0-ha-Krc" customClass="CadastroViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AKw-7S-dDs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krr-ko-Tqh">
+                                <rect key="frame" x="30" y="102" width="315" height="437"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome da Instituição" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="53v-Ze-LRT">
+                                        <rect key="frame" x="30" y="73" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone1024x1024" translatesAutoresizingMaskIntoConstraints="NO" id="DYo-Sr-0FI">
+                                        <rect key="frame" x="104" y="-51" width="107" height="104"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="107" id="GkA-5f-nP1"/>
+                                            <constraint firstAttribute="height" constant="104" id="XHV-JD-tcR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROH-S6-h91">
+                                        <rect key="frame" x="30" y="122" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="street-address"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R22-yo-Uf9">
+                                        <rect key="frame" x="30" y="172" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CNPJ" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iB2-Y9-lFs">
+                                        <rect key="frame" x="30" y="222" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="tel"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AYq-bC-7UG">
+                                        <rect key="frame" x="30" y="272" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mPL-1u-XOx">
+                                        <rect key="frame" x="30" y="322" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6R-Ze-Cis">
+                                        <rect key="frame" x="30" y="383" width="255" height="30"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cadastrar">
+                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnCadastra:" destination="Lx0-ha-Krc" eventType="touchUpInside" id="NOp-Sl-gXR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DYo-Sr-0FI" firstAttribute="top" secondItem="krr-ko-Tqh" secondAttribute="top" constant="-51" id="0hP-1G-3gV"/>
+                                    <constraint firstAttribute="trailing" secondItem="R22-yo-Uf9" secondAttribute="trailing" constant="30" id="1PM-dq-MbH"/>
+                                    <constraint firstItem="u6R-Ze-Cis" firstAttribute="top" secondItem="mPL-1u-XOx" secondAttribute="bottom" constant="31" id="1qp-s7-T4w"/>
+                                    <constraint firstAttribute="trailing" secondItem="mPL-1u-XOx" secondAttribute="trailing" constant="30" id="2Ft-Mc-tX9"/>
+                                    <constraint firstItem="AYq-bC-7UG" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="4mM-6O-l1E"/>
+                                    <constraint firstItem="u6R-Ze-Cis" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="6go-zL-DdN"/>
+                                    <constraint firstItem="iB2-Y9-lFs" firstAttribute="top" secondItem="R22-yo-Uf9" secondAttribute="bottom" constant="20" id="9sN-UV-ZtO"/>
+                                    <constraint firstItem="ROH-S6-h91" firstAttribute="top" secondItem="53v-Ze-LRT" secondAttribute="bottom" constant="19" id="Blr-rK-kpq"/>
+                                    <constraint firstItem="53v-Ze-LRT" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="Gjf-GR-Y4o"/>
+                                    <constraint firstItem="DYo-Sr-0FI" firstAttribute="centerX" secondItem="krr-ko-Tqh" secondAttribute="centerX" id="OFG-rl-jgv"/>
+                                    <constraint firstAttribute="trailing" secondItem="53v-Ze-LRT" secondAttribute="trailing" constant="30" id="RTi-Op-Vgx"/>
+                                    <constraint firstItem="mPL-1u-XOx" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="TN8-HB-M6c"/>
+                                    <constraint firstAttribute="trailing" secondItem="u6R-Ze-Cis" secondAttribute="trailing" constant="30" id="UBW-qL-7x2"/>
+                                    <constraint firstItem="AYq-bC-7UG" firstAttribute="top" secondItem="iB2-Y9-lFs" secondAttribute="bottom" constant="20" id="Ukq-Xf-Pi8"/>
+                                    <constraint firstAttribute="trailing" secondItem="AYq-bC-7UG" secondAttribute="trailing" constant="30" id="ajN-oF-nf1"/>
+                                    <constraint firstItem="R22-yo-Uf9" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="bbw-N9-eNI"/>
+                                    <constraint firstAttribute="trailing" secondItem="iB2-Y9-lFs" secondAttribute="trailing" constant="30" id="eFD-Ld-blB"/>
+                                    <constraint firstItem="mPL-1u-XOx" firstAttribute="top" secondItem="AYq-bC-7UG" secondAttribute="bottom" constant="20" id="gAD-or-z3u"/>
+                                    <constraint firstAttribute="trailing" secondItem="ROH-S6-h91" secondAttribute="trailing" constant="30" id="hic-qc-NoC"/>
+                                    <constraint firstItem="R22-yo-Uf9" firstAttribute="top" secondItem="ROH-S6-h91" secondAttribute="bottom" constant="20" id="mls-QE-xmu"/>
+                                    <constraint firstItem="53v-Ze-LRT" firstAttribute="top" secondItem="DYo-Sr-0FI" secondAttribute="bottom" constant="20" id="o0l-3n-Uiz"/>
+                                    <constraint firstItem="iB2-Y9-lFs" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="oBN-lt-76j"/>
+                                    <constraint firstAttribute="width" constant="315" id="pTw-5G-TUV"/>
+                                    <constraint firstAttribute="height" constant="437" id="ur0-bL-Ftg"/>
+                                    <constraint firstItem="ROH-S6-h91" firstAttribute="leading" secondItem="krr-ko-Tqh" secondAttribute="leading" constant="30" id="wmM-Li-bYO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="view.layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="krr-ko-Tqh" firstAttribute="centerX" secondItem="AKw-7S-dDs" secondAttribute="centerX" id="FzD-nd-U8V"/>
+                            <constraint firstItem="krr-ko-Tqh" firstAttribute="centerY" secondItem="AKw-7S-dDs" secondAttribute="centerY" constant="19" id="auT-lM-oxz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TRG-ee-Mpx"/>
+                    </view>
+                    <connections>
+                        <outlet property="btCadastrar" destination="u6R-Ze-Cis" id="uik-OY-Olk"/>
+                        <outlet property="cnpjTextField" destination="iB2-Y9-lFs" id="lsm-80-gGY"/>
+                        <outlet property="emailTextField" destination="AYq-bC-7UG" id="BJi-Ol-5E3"/>
+                        <outlet property="enderecoTextField" destination="ROH-S6-h91" id="2G6-l8-sOt"/>
+                        <outlet property="icoCadastro" destination="DYo-Sr-0FI" id="Pw5-yC-vhR"/>
+                        <outlet property="nomeTextField" destination="53v-Ze-LRT" id="Gf1-eJ-kwk"/>
+                        <outlet property="senhaTextField" destination="mPL-1u-XOx" id="Sla-Oh-T78"/>
+                        <outlet property="telefoneTextField" destination="R22-yo-Uf9" id="DMf-e2-sft"/>
+                        <outlet property="viewCadastro" destination="krr-ko-Tqh" id="n8r-23-aYC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LB6-bO-86J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5828" y="2051"/>
         </scene>
     </scenes>
     <resources>
@@ -1194,6 +1505,7 @@ contato@santoantonio.com.br</string>
         <image name="bell" width="29" height="29"/>
         <image name="bg" width="1170" height="620"/>
         <image name="home" width="29" height="29"/>
+        <image name="icone1024x1024" width="1024" height="1024"/>
         <image name="profile" width="29" height="29"/>
         <image name="seta" width="58" height="92"/>
     </resources>

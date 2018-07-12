@@ -11,7 +11,7 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-let ref = Database.database().reference()
+    let ref = Database.database().reference()
     
     
     
@@ -20,15 +20,45 @@ let ref = Database.database().reference()
     @IBOutlet weak var txtelefone: UITextField!
     @IBOutlet weak var txtemail: UITextField!
     @IBOutlet weak var slider: UISlider!
-    
     @IBOutlet weak var imgPhoto: UIImageView!
+    @IBOutlet weak var segControl: UISegmentedControl!
+    
     
     //@IBOutlet weak var btnGallery: UIButton!
     
-    
     let imagePicker = UIImagePickerController()
     
+    var nomeFB: String? = ""
+    var emailFB: String? = ""
+    var photoFB: String? = ""
+    var indAlimentosFB: Double? = 0.0
+    var indEntretenimentoFB: Double? = 0.0
+    var indMedicamentosFB: Double? = 0.0
+    var indHigieneFB: Double? = 0.0
+    var txtSobreFB: String? = ""
+    var sobreFB: String? = ""
+    var cnpjFB: String? = ""
+    var siteFB: String? = ""
+    var telefoneFB: String? = ""
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Editar Perfil"
+        
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        
+        
+        //self.navigationItem.setHidesBackButton(true, animated:true)
+        
+        imagePicker.delegate = self
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mostraDados()
+    }
     
     @IBAction func btnGallery(_ sender: UIButton) {
         imagePicker.sourceType = .photoLibrary
@@ -46,43 +76,6 @@ let ref = Database.database().reference()
         
     }
     
-    var nomeFB: String? = ""
-    var emailFB: String? = ""
-    var photoFB: String? = ""
-    var indAlimentosFB: Double? = 0.0
-    var indEntretenimentoFB: Double? = 0.0
-    var indMedicamentosFB: Double? = 0.0
-    var indHigieneFB: Double? = 0.0
-    var txtSobreFB: String? = ""
-    var sobreFB: String? = ""
-    var cnpjFB: String? = ""
-    var siteFB: String? = ""
-    var telefoneFB: String? = ""
-    
-    
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        mostraDados()
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = "Cancelar"
-        navigationItem.backBarButtonItem = backItem
-        
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        
-        
-        self.navigationItem.setHidesBackButton(true, animated:true)
-        
-        imagePicker.delegate = self
-
-    }
-
-
     @IBAction func segValueChange(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
@@ -97,12 +90,11 @@ let ref = Database.database().reference()
         else if (sender.selectedSegmentIndex == 3){
             self.slider.value = Float(self.indHigieneFB!)
         }
-
+        
     }
     
     
     func mostraDados () {
-        print(Auth.auth().currentUser!.uid)
         let value = Auth.auth().currentUser!
         ref.child("asilos").child(value.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
@@ -121,22 +113,55 @@ let ref = Database.database().reference()
             self.telefoneFB = value?["telefone"] as? String
             
             self.txtSobre.text = self.sobreFB
+            self.txtelefone.text = self.telefoneFB
             self.slider.value = Float(self.indAlimentosFB!)
-            
-            
-            
             
         }) { (error) in
             // self.exibeAlerta()
         }
-        
-        
     }
     
-//    func salvarDados () {
-//
-//    }
     
+    @IBAction func updateSliderInFB(_ sender: UISlider) {
+        let ref = Database.database().reference().child("asilos").child(Auth.auth().currentUser!.uid)
+        var changes: [String: Double] = [:]
+        if segControl.selectedSegmentIndex == 0 {
+            indAlimentosFB = Double(slider.value)
+            changes = ["indAlimentos": indAlimentosFB!]
+        }
+        else if (segControl.selectedSegmentIndex == 1){
+            changes = ["indEntretenimento": Double(slider.value)]
+            self.indEntretenimentoFB = Double(slider.value)
+        }
+        else if (segControl.selectedSegmentIndex == 2){
+            changes = ["indMedicamentos": Double(slider.value)]
+            self.indMedicamentosFB = Double(slider.value)
+        }
+        else if (segControl.selectedSegmentIndex == 3){
+            changes = ["indHigiene": Double(slider.value)]
+            self.indHigieneFB = Double(slider.value)
+        }
+        
+        
+        
+        ref.updateChildValues(changes)
+        print("Updated Firebase")
+    }
+    
+    //    func updateSliderInFB() {
+    //        if segControl.selectedSegmentIndex == 0 {
+    //            indAlimentosFB = Double(slider.value)
+    //        }
+    //        else if (segControl.selectedSegmentIndex == 1){
+    //            indEntretenimentoFB = Double(slider.value)
+    //        }
+    //        else if (segControl.selectedSegmentIndex == 2){
+    //            indMedicamentosFB = Double(slider.value)
+    //        }
+    //        else if (segControl.selectedSegmentIndex == 3){
+    //            indHigieneFB = Double(slider.value)
+    //        }
+    //    }
     
     @IBAction func btnSalvar(_ sender: UIBarButtonItem) {
         let ref = Database.database().reference().child("asilos").child(Auth.auth().currentUser!.uid)
@@ -144,11 +169,8 @@ let ref = Database.database().reference()
             "sobre": self.txtSobre.text,
             "email": self.txtemail.text!,
             "telefone": self.txtelefone.text!
-           // "indAlimentos":
             ])
         
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
 }
