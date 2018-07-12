@@ -8,6 +8,7 @@
 
 import UIKit
 import RevealingSplashView
+import FirebaseAuth
 
 class FirstViewController: UIViewController {
 

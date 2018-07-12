@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,7 +14,7 @@
         <!--Asilo Santa Infernidade-->
         <scene sceneID="dOn-xL-m36">
             <objects>
-                <viewController title="Asilo Santa Infernidade" id="eAx-CV-fbI" customClass="PerfilViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Asilo Santa Infernidade" id="eAx-CV-fbI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bQl-0S-0k7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +37,7 @@
                                                     <constraint firstAttribute="height" constant="62" id="Iut-U4-DKM"/>
                                                     <constraint firstAttribute="width" constant="61" id="XYd-ul-sFS"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="OpenCamera1"/>
+                                                <state key="normal" title="Editar"/>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -450,26 +449,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDI-iV-oo2">
-                                        <rect key="frame" x="12" y="238.33333333333337" width="366" height="19.333333333333314"/>
+                                        <rect key="frame" x="12" y="54.333333333333314" width="366" height="19.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-wm-hrt">
-                                        <rect key="frame" x="12" y="34.333333333333314" width="366" height="184"/>
-                                        <string key="text">O Lar Santo Antonio dos Excepcionais, fundado em 10 de
-                                            fevereiro de 1979, é uma sociedade civil, de caráter
-                                            assistencial, com personalidade jurídica de direito privado e
-                                            sem fins lucrativos.
-                                            
-                                            Completamos este ano 37 anos de atividades Filantrópicas e
-                                            de Utilidade Pública Municipal, Estadual e Federal.</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVu-wm-hrt">
+                                        <rect key="frame" x="12" y="34.333333333333314" width="366" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="31" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRF-dp-tap">
-                                        <rect key="frame" x="12" y="262.33333333333337" width="366" height="33.666666666666686"/>
+                                        <rect key="frame" x="12" y="78.333333333333314" width="366" height="33.666666666666657"/>
                                         <string key="text">(51) 3044-3044
                                             contato@santoantonio.com.br</string>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
@@ -513,7 +505,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="NSb-m8-csl">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <segue destination="eAx-CV-fbI" kind="show" identifier="editProfile" id="K8P-68-UoC"/>
+                                <segue destination="eAx-CV-fbI" kind="show" identifier="editPerfil" id="ZJn-GR-MjQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -552,7 +544,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="OpenCamera1" width="512" height="512"/>
         <image name="angular" width="300" height="299"/>
         <image name="bg" width="1170" height="620"/>
     </resources>

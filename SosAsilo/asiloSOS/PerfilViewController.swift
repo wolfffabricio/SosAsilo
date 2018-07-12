@@ -8,9 +8,11 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class PerfilViewController: UIViewController {
     let ref = Database.database().reference()
+    
 
     @IBOutlet weak var labelAlimentacao: UILabel!
     @IBOutlet weak var labelEntretenimento: UILabel!
@@ -26,9 +28,13 @@ class PerfilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        performSegue(withIdentifier: "mostraLogin", sender: txtSobre)
         
-        ref.child("asilos").child("-LH8jpKW7aQaHN73QiF1").observeSingleEvent(of: .value, with: { (snapshot) in
+    }
+    
+    func mostraDados () {
+        print(Auth.auth().currentUser!.uid)
+        let value = Auth.auth().currentUser!
+        ref.child("asilos").child(value.uid).observeSingleEvent(of: .value, with: { (snapshot) in
             // Get user value
             let value = snapshot.value as? NSDictionary
             let nomeFB = value?["nome"] as? String
@@ -56,13 +62,20 @@ class PerfilViewController: UIViewController {
             
             self.txtSobre.text = sobreFB
             self.photo.image = UIImage(named: "\(photoFB)")
-            self.txtContato.text = "\(telefoneFB!)\n\(emailFB!)\n\(siteFB!)"
+            self.txtContato.text = "\(telefoneFB!)\n\(Auth.auth().currentUser!.email!)\n\(siteFB!)"
             // ...
         }) { (error) in
             self.exibeAlerta()
         }
 
-        // Do any additional setup after loading the view.
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        if Auth.auth().currentUser != nil {
+            mostraDados()
+        } else {
+            self.performSegue(withIdentifier: "mostraLogin", sender: self)
+        }
     }
     
     func exibeAlerta (){

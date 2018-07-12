@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import FirebaseAuth
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -20,16 +21,62 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidAppear(animated)
         let request: NSFetchRequest<Asilos> = Asilos.fetchRequest()
         
-        let results = try! AppDelegate.persistentContainer.viewContext.fetch(request)
+        //let results = try! AppDelegate.persistentContainer.viewContext.fetch(request)
         
-        print(results.first)
+        
+    }
+    @IBAction func btnLogin(_ sender: UIButton) {
+        if (emailTextField.text?.isEmpty ?? true){
+            exibeAlerta(erro: 3)
+        }
+        else if (senhaTextField.text?.isEmpty ?? true){
+            exibeAlerta(erro: 3)
+        }else{
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: senhaTextField.text!) { (user, error) in
+                if error != nil {
+                    if let errCode = AuthErrorCode(rawValue: error!._code) {
+
+                        switch errCode {
+                        case .invalidEmail:
+                            self.exibeAlerta(erro: 1)
+                        case .wrongPassword:
+                            self.exibeAlerta(erro: 1)
+                        default:
+                            self.exibeAlerta(erro: 2)
+                        }
+
+                    }
+
+                }else{
+                    self.dismiss(animated: true, completion: nil)
+                }
+                
+            }
+
+        }
+    }
+    func exibeAlerta (erro: Int){
+        var description: String = ""
+        if(erro == 1){
+            description = "Dados inválidos"
+        } else
+        if(erro == 2){
+            description = "Tente novamente"
+        } else
+        if(erro == 3){
+            description = "Preencha seu email e senha"
+        }
+        
+        let alert = UIAlertController(title: "Ops, algo errado", message: "\(description)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
+            
+        })
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
         
         self.emailTextField.delegate = self
         self.senhaTextField.delegate = self

@@ -7,27 +7,29 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class NotificationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+
     let model = NotificationModel.createNotification()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         self.tableView.rowHeight = 100
-        
+
         tableView.dataSource = self
         tableView.delegate = self
-        
+
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return model.data.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! ListaNotificationCell
         
@@ -45,5 +47,14 @@ class NotificationViewController: UIViewController, UITableViewDataSource, UITab
     
         
         return cell
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
     }
 }

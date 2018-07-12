@@ -28,24 +28,29 @@ class CadastroViewController: UIViewController {
     
     @IBAction func btnCadastra(_ sender: UIButton) {
         if (nomeTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
         }
         else if (enderecoTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
         }
         else if (telefoneTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
         }
         else if (cnpjTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
         }
         else if (emailTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
         }
         else if (senhaTextField.text?.isEmpty ?? true){
-            exibeAlerta()
+            exibeAlerta(erro: 1)
+        }
+        else if (senhaTextField.text!.count < 6){
+            exibeAlerta(erro: 2)
+        }
+        else if (!emailTextField.text!.validateEmail()){
+            exibeAlerta(erro: 3)
         }else{
-            
             
             Auth.auth().createUser(withEmail: emailTextField.text!, password: senhaTextField.text!) { (user, error) in
                 if error == nil {
@@ -64,18 +69,29 @@ class CadastroViewController: UIViewController {
                       "indEntretenimento": 0.0,
                       "indHigiene": 0.0,
                       "indMedicamentos": 0.0])
+                    
+                    self.dismiss(animated: false, completion: nil)
                 }else{
                     print(error!.localizedDescription.description)
                 }}
-            
-            
             
             //performSegue(withIdentifier: "mostraPerfil", sender: asilo)
         }
     }
     
-    func exibeAlerta (){
-        let alert = UIAlertController(title: "Ops, algo errado", message: "Preencha todos os campos do seu cadastro", preferredStyle: .alert)
+    func exibeAlerta (erro: Int){
+        var description: String = ""
+        if(erro == 1){
+            description = "Preencha todos os campos"
+        } else
+            if(erro == 2){
+                description = "Senha deve conter no mínimo 6 caracteres"
+        }else
+            if(erro == 3){
+                description = "Email inválido"
+        }
+        
+        let alert = UIAlertController(title: "Ops, algo errado", message: "\(description)", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default) { action in
             
         })
@@ -150,4 +166,10 @@ class CadastroViewController: UIViewController {
         return true
     }
 
+}
+extension String {
+    func validateEmail() -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        return NSPredicate(format: "SELF MATCHES %@", emailRegex).evaluate(with: self)
+    }
 }
