@@ -12,7 +12,7 @@ import FirebaseAuth
 
 class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     let ref = Database.database().reference()
-    
+    var changes: [String: Double] = [:]
     
     
     @IBOutlet weak var txtSobre: UITextView!
@@ -43,6 +43,11 @@ class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        changes = ["indAlimentos": Double(self.indAlimentosFB!)]
+        changes = ["indEntretenimento": Double(self.indEntretenimentoFB!)]
+        changes = ["indHigiene": Double(self.indHigieneFB!)]
+        changes = ["indMedicamentos": Double(self.indMedicamentosFB!)]
         
         self.title = "Editar Perfil"
         
@@ -123,8 +128,6 @@ class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     @IBAction func updateSliderInFB(_ sender: UISlider) {
-        let ref = Database.database().reference().child("asilos").child(Auth.auth().currentUser!.uid)
-        var changes: [String: Double] = [:]
         if segControl.selectedSegmentIndex == 0 {
             indAlimentosFB = Double(slider.value)
             changes = ["indAlimentos": indAlimentosFB!]
@@ -144,8 +147,7 @@ class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegat
         
         
         
-        ref.updateChildValues(changes)
-        print("Updated Firebase")
+        
     }
     
     //    func updateSliderInFB() {
@@ -170,6 +172,9 @@ class PerfilEditViewController: UIViewController, UIImagePickerControllerDelegat
             "email": self.txtemail.text!,
             "telefone": self.txtelefone.text!
             ])
+        
+        ref.updateChildValues(changes)
+        print("Updated Firebase")
         
         self.navigationController?.popViewController(animated: true)
     }
