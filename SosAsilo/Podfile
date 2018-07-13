@@ -4,6 +4,7 @@ platform :ios, '11.0'
 target 'asiloSOS' do
 
   use_frameworks!
+  pod 'FAQView'
   pod 'Firebase/Core'
   pod 'Firebase/Auth’
   pod 'Firebase/Database'

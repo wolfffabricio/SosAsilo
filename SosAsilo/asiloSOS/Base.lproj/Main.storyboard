@@ -112,6 +112,9 @@
                     <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-info-50" id="iSO-X0-hZM">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="XyI-8C-rkS" kind="show" id="MdM-a1-3ZZ"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -1501,6 +1504,26 @@ contato@santoantonio.com.br</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LB6-bO-86J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5828" y="2051"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DgV-SS-fXB">
+            <objects>
+                <viewController id="XyI-8C-rkS" customClass="FAQViewController" customModule="asiloSOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7hk-Zt-GUo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZY9-SL-HmJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fns-h9-1W4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dMV-KS-7R1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q6o-OK-2Ac"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROa-9W-cbp" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5734" y="-443"/>
         </scene>
     </scenes>
     <resources>
