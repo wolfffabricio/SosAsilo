@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t1V-JU-2aD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="t1V-JU-2aD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -109,7 +109,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="G6O-qr-0P8"/>
                     </view>
-                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV"/>
+                    <navigationItem key="navigationItem" title="SOS Asilo" id="hnj-d8-odV">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="icons8-info-50" id="iSO-X0-hZM">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="iCy-R0-oxO" id="xRF-Hb-57F"/>
                         <outlet property="topBar" destination="hnj-d8-odV" id="akB-HI-yIZ"/>
@@ -453,7 +457,7 @@ contato@santoantonio.com.br</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eCH-OQ-OJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5634.3999999999996" y="133.5832083958021"/>
+            <point key="canvasLocation" x="6210" y="366"/>
         </scene>
         <!--Home-->
         <scene sceneID="SzZ-4Z-bhO">
@@ -1506,6 +1510,7 @@ contato@santoantonio.com.br</string>
         <image name="bg" width="1170" height="620"/>
         <image name="home" width="29" height="29"/>
         <image name="icone1024x1024" width="1024" height="1024"/>
+        <image name="icons8-info-50" width="25" height="25"/>
         <image name="profile" width="29" height="29"/>
         <image name="seta" width="58" height="92"/>
     </resources>
