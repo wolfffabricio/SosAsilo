@@ -62,6 +62,7 @@ class FAQViewController: UIViewController {
     }
     
     @objc func buttonPressed(_ sender: UIBarButtonItem) {
-        self.performSegue(withIdentifier: "backToFirst", sender: self)
+        //self.performSegue(withIdentifier: "backToFirst", sender: self)
+        self.navigationController?.popViewController(animated: true)
     }
 }
